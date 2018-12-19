@@ -1,4 +1,0 @@
-<apex:page showHeader="true" tabstyle="Plan_Milestone__c">
-<apex:sectionheader title="Plan Milestone" subtitle="Home"></apex:sectionheader>
-    <apex:ListViews type="Plan_Milestone__c" />
-</apex:page>
