@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This email notifies approver that a deliverable is ready for their review</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Deliverable Assigned to you for Approval</name>
+    <style>none</style>
+    <subject>Deliverable Assigned to you for Approval</subject>
+    <type>text</type>
+</EmailTemplate>

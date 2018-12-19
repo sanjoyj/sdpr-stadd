@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Referral rejected notification V2</name>
+    <style>none</style>
+    <subject>Collaborate Referral Not Accepted</subject>
+    <textOnly>Hello,
+
+A referral you created in Collaborate has been rejected.
+
+Referral ID: {!Referral__c.Name}
+Reason for Rejection: {!Referral__c.Sub_Status__c}
+
+If you require further information, please either login to Collaborate using the link below or contact STADD Support at 1-855-356-5609.
+
+https://main-stadd-force-com.developmental-disability-support.gov.bc.ca/CommunitiesLogin
+
+
+Thank You,
+STADD Administrator</textOnly>
+    <type>custom</type>
+</EmailTemplate>

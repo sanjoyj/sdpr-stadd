@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Owner</field>
+    </columns>
+    <columns>
+        <field>Case.Functional_Domains__r$Assessor_Name_formula__c</field>
+    </columns>
+    <columns>
+        <field>Case.Functional_Domains__r$Assessment_Date__c</field>
+    </columns>
+    <columns>
+        <field>Case.Functional_Domains__r$Assesor_Role__c</field>
+    </columns>
+    <columns>
+        <field>Case.Functional_Domains__r$Name</field>
+    </columns>
+    <description>Navigator Dashboard summary of FD Summary entries for the current and previous months</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>Case.Functional_Domains__r$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Functional_Domains__r$Functional_Domain_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case.Functional_Domains__r$Case_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>STADD Navigator New FD Summaries</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>STADD_Functional_Domains__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case.Functional_Domains__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST60</interval>
+    </timeFrameFilter>
+</Report>

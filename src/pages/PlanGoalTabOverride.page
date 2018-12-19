@@ -1,0 +1,4 @@
+<apex:page showHeader="true" tabstyle="Plan_Goal__c">
+<apex:sectionheader title="Plan Goals" subtitle="Home"></apex:sectionheader>
+    <apex:ListViews type="Plan_Goal__c" />
+</apex:page>

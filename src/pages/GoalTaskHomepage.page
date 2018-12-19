@@ -1,0 +1,240 @@
+<!--Changes made on Aug 22, 2018 per Remedy ticket 0000670296-->
+<!--Last modified date column commented per Remedy ticket 0000606372-->
+<apex:page controller="GoalTaskHomepageController" title="STADD Goal Task Homepage" showHeader="false" tabStyle="Case">
+  <apex:form styleClass="gth">
+    <apex:pageMessages />
+    <!-- Start Cases -->
+    <apex:pageBlock title="My Supported Individuals">
+      <!-- Start Cases -->
+      <div class="btns">
+        <apex:commandButton rendered="{!$ObjectType.Functional__c.createable}" styleClass="js-new-functional-domain" value="+ CAP - New Functional Domain" />
+        <apex:commandButton rendered="{!$ObjectType.Case_Alert__c.createable}" styleClass="js-new-alert" value="+ New Alert"/>
+        <apex:commandButton rendered="{!$ObjectType.Case_Document__c.createable}" styleClass="js-new-document" value="+ New Document" />
+        
+        <div style="float:right !important;">
+           <apex:outputText rendered="{!$ObjectType.Case_Access_Request__c.createable}">
+               <span style="display:inline-block; padding-right: 2em;">
+                   Can&apos;t find your case?&nbsp;<apex:outputLink target="_top" value="{!URLFOR($Action.Case_Access_Request__c.New)}">Request Access</apex:outputLink>.
+               </span>
+           </apex:outputText>
+           <apex:commandButton rendered="{!$ObjectType.Referral__c.createable}" styleClass="js-new-referral bg-green" value="New Referral" />
+        </div>
+      </div>
+      <apex:pageBlockTable styleClass="caseTable" value="{!cases}" var="case">
+        <apex:column >
+          <apex:facet name="header">Select</apex:facet>
+          <apex:inputCheckbox styleClass="js-selected-box" html-data-caseid="{!HTMLENCODE(case.obj.Id)}" html-data-casenumber="{!HTMLENCODE(case.obj.CaseNumber)}" value="{!case.selected}"/>
+        </apex:column>
+        <apex:column >
+          <apex:facet name="header">{!$ObjectType.Case.fields.CaseNumber.label}</apex:facet>
+          <apex:outputLink target="_top" value="{!URLFOR($Action.Case.View, case.obj.id)}">{!case.obj.CaseNumber}</apex:outputLink>
+        </apex:column>
+        <apex:column >
+          <apex:facet name="header">Individual Name</apex:facet>
+          <apex:outputLink target="_top" rendered="{!NOT(ISNULL(case.obj.ContactId))}" value="{!URLFOR($Action.Contact.View, case.obj.ContactId)}">{!case.obj.Contact.Name}</apex:outputLink>
+        </apex:column>
+        <!--apex:column >
+          <apex:facet name="header">{!$ObjectType.Case.fields.LastModifiedDate.label}</apex:facet>
+          <apex:outputText value="{0,date,yyyy'-'MM'-'dd}">
+            <apex:param value="{!case.obj.LastModifiedDate}" /> 
+          </apex:outputText>
+        </apex:column-->
+        <apex:column >
+          <apex:facet name="header">Alert Added</apex:facet>
+          <apex:outputText rendered="{!case.hasNewAlert}">
+              <apex:outputLink target="_top" value="{!baseUrl}/{!caseAlertObjectPrefix}?rlid={!caseAlertRelatedListId}&id={!case.obj.id}">
+                  <span class="icon exclamation" />{!case.newAlertCount} New Alert<apex:outputText rendered="{!case.newAlertCount > 1}">s</apex:outputText>
+              </apex:outputLink>
+          </apex:outputText>
+        </apex:column>
+        
+        <apex:column >
+          <apex:facet name="header">Contribution Added</apex:facet>
+          <apex:outputText rendered="{!case.hasNewContribution}">
+              <apex:outputLink target="_top" value="{!baseUrl}/{!ContributionObjectPrefix}?rlid={!ContributionRelatedListId}&id={!case.obj.id}">
+                  <span class="icon group" />{!case.newContributionCount} New Contribution<apex:outputText rendered="{!case.newContributionCount > 1}">s</apex:outputText>
+              </apex:outputLink>
+          </apex:outputText>
+        </apex:column>
+        
+        <apex:column >
+          <apex:facet name="header">Functional Domain Added</apex:facet>
+          <apex:outputText rendered="{!case.hasNewFunctionalDomain}">
+              <apex:outputLink target="_top" value="{!baseUrl}/{!functionalDomainObjectPrefix}?rlid={!functionalDomainRelatedListId}&id={!case.obj.id}">
+                 <span class="icon green-flag" />{!case.newFunctionalDomainCount} New Functional Domain<apex:outputText rendered="{!case.newFunctionalDomainCount > 1}">s</apex:outputText>
+              </apex:outputLink>
+          </apex:outputText>
+        </apex:column>
+        <apex:column >
+          <apex:facet name="header">Overdue Action Items</apex:facet>
+          <apex:outputText rendered="{!case.hasOverdueActionItems}">
+              <!--SJ: Commented the output link as part of Ticket #0000670296-->
+              <!--apex:outputLink target="_top" value="{!baseUrl}/{!case.obj.id}"-->
+                 <span class="icon red-flag" />{!case.overdueActionItemsCount} Overdue Action Item<apex:outputText rendered="{!case.overdueActionItemsCount > 1}">s</apex:outputText>
+              <!--/apex:outputLink-->
+          </apex:outputText>
+        </apex:column>
+      </apex:pageBlockTable><!-- End Cases -->
+      <br/>
+      </apex:pageBlock>
+
+      <!-- Start Action Items -->
+      <apex:outputPanel layout="none" rendered="{!$ObjectType.Action_Item__c.accessible}">
+      <apex:pageBlock title="My Action Items">
+          <div class="btns">
+            <!--SJ: Commented below line as part of Ticket #0000670296-->
+            <!--apex:commandButton rendered="{!$ObjectType.Action_Item__c.createable}" styleClass="js-new-action-item" value="+ New Action Item" /-->
+            <div style="float:right !important;">
+                <apex:actionstatus id="actionItemsStatus">
+                    <apex:facet name="start">
+                        <img src="/img/loading32.gif" alt="Loading..." class="loadingSpinner"/>
+                    </apex:facet>
+                </apex:actionstatus>
+                <apex:selectList value="{!actionItemFilter}" size="1">
+                    <apex:selectOption itemValue="allOpen" itemLabel="All Open"/>
+                    <apex:selectOption itemValue="overdue" itemLabel="Overdue"/>
+                    <apex:selectOption itemValue="nextSevenDays" itemLabel="Next 7 Days"/>
+                    <apex:selectOption itemValue="nextTwoWeeks" itemLabel="Next Two Weeks"/>
+                    <apex:actionSupport event="onchange" action="{!loadActionItems}" reRender="actionItems" status="actionItemsStatus"/>
+                </apex:selectList>
+            </div>
+          </div>
+          <apex:pageBlockTable id="actionItems" styleClass="actionItemTable" value="{!actionItems}" var="actionItem">
+            <apex:column >
+              <apex:facet name="header">Actions</apex:facet>
+              <!--SJ: Changed Link Name from 'CLose' to 'Edit' as part of Ticket #0000670296-->
+              <apex:outputLink target="_top" value="{!URLFOR($Action.Action_Item__c.Edit, actionItem.id, [retURL='/home/home.jsp'])}&{!actionItemStatus_fieldId}=Complete">Edit</apex:outputLink>
+            </apex:column>
+            <apex:column >
+              <apex:facet name="header">Action Item Number</apex:facet>
+              <apex:outputLink target="_top" value="{!URLFOR($Action.Action_Item__c.View, actionItem.id)}">{!actionItem.Name}</apex:outputLink>
+            </apex:column>
+            
+            <apex:column >
+              <apex:facet name="header">{!$ObjectType.Action_Item__c.fields.Individual_Name__c.label}</apex:facet>
+              <apex:outputText value="{!actionItem.Individual_Name__c}"/>
+            </apex:column>
+            <apex:column >
+              <apex:facet name="header">Action Item Name</apex:facet>
+              <apex:outputText value="{!actionItem.Activity__c}"/>
+            </apex:column>
+            <apex:column >
+              <apex:facet name="header">{!$ObjectType.Action_Item__c.fields.Review_Date__c.label}</apex:facet>
+              <apex:outputText value="{0,date,yyyy'-'MM'-'dd}">
+                <apex:param value="{!actionItem.Review_Date__c}" /> 
+              </apex:outputText>
+            </apex:column>
+            <apex:column >
+              <apex:facet name="header">{!$ObjectType.Action_Item__c.fields.Status__c.label}</apex:facet>
+              <apex:outputText value="{!actionItem.Status__c}"/>
+            </apex:column>
+            <apex:column >
+              <apex:facet name="header">{!$ObjectType.Action_Item__c.fields.Description__c.label}</apex:facet>
+              <apex:outputText escape="false" value="{!actionItem.Description__c}"/>
+            </apex:column>
+            
+
+          </apex:pageBlockTable><!-- End Action Items -->
+      </apex:pageBlock> 
+      </apex:outputPanel>
+  </apex:form>
+  <apex:stylesheet value="{!URLFOR($Page.GoalTaskHomepageStyles)}"/>
+  <script src="{!URLFOR($Resource.jquery)}"></script>
+  <script>
+    jQuery.noConflict();
+    
+    var App = {};
+    App.baseUrl = "{!baseUrl}";
+    App.getSelectedCaseId = function() {
+      var checkedInputs = jQuery('table.caseTable').find('input.js-selected-box:checked');
+      if (checkedInputs.length !== 1) {
+        return false;
+      }
+      return checkedInputs[0].getAttribute('data-caseid');
+    };
+    App.getSelectedCaseNumber = function() {
+      var checkedInputs = jQuery('table.caseTable').find('input.js-selected-box:checked');
+      if (checkedInputs.length !== 1) {
+        return false;
+      }
+      return checkedInputs[0].getAttribute('data-casenumber');
+    };
+    
+    App.addFunctionalDomainUrl = "{!URLFOR($Page.CreateFunDomainPage, null, [retURL='/home/home.jsp'])}";
+    App.addFunctionalDomain = function() {
+      var caseId = App.getSelectedCaseId();
+      if (!caseId) {
+        alert("You must select a case.");
+        // Convert this to use an on-page message. Alert modals negatively impact the user experience.
+        return false;
+      }
+      // Open new tab with add functional domain summary VF page
+      window.open(App.addFunctionalDomainUrl + '&id=' + caseId, "_top");
+      return false;
+    };
+    
+    App.addAlertUrl = "{!URLFOR($Action.Case_Alert__c.New, null, [retURL='/home/home.jsp'])}";
+    App.alertCaseFieldId = "{!alertCase_fieldId}";
+    App.addAlert = function() {
+      var caseId = App.getSelectedCaseId();
+      if (!caseId) {
+        alert("You must select a case.");
+        // Convert this to use an on-page message. Alert modals negatively impact the user experience.
+        return false;
+      }
+      var caseNumber = App.getSelectedCaseNumber();
+      var url = App.addAlertUrl;
+      // Add the case number and ID for lookup prefill.
+      url += encodeURIComponent('&' + App.alertCaseFieldId + '=' + caseNumber);
+      url += encodeURIComponent('&' + App.alertCaseFieldId + '_lkid=' + caseId);
+      window.open(url, "_top");
+      return false;
+    };
+    
+
+    App.addDocumentUrl = "{!URLFOR($Action.Case_Document__c.New, null, [retURL='/home/home.jsp'])}";
+    App.documentCaseFieldId = "{!docCase_fieldId}";
+    App.addDocument = function() {
+      var caseId = App.getSelectedCaseId();
+      if (!caseId) {
+        alert("You must select a case.");
+        // Convert this to use an on-page message. Alert modals negatively impact the user experience.
+        return false;
+      }
+      var caseNumber = App.getSelectedCaseNumber();
+      var url = App.addDocumentUrl;
+      // Add the case number and ID for lookup prefill.
+      url += encodeURIComponent('&' + App.documentCaseFieldId + '=' + caseNumber);
+      url += encodeURIComponent('&' + App.documentCaseFieldId + '_lkid=' + caseId);
+      window.open(url, "_top");
+      return false;
+    };
+    
+    App.addReferralUrl = "{!URLFOR($Action.Referral__c.New, null, [retURL='/home/home.jsp'])}";
+    App.addReferral = function() {
+      window.open(App.addReferralUrl, "_top");
+      return false;
+    }
+    
+    App.addActionItemUrl = "{!URLFOR($Page.AddActionItemToPlanMilestone, null, [retURL='/home/home.jsp'])}";
+    App.addActionItem = function() {
+      window.open(App.addActionItemUrl, "_top");
+      return false;
+    }
+    
+    App.addActionItemUrl = "{!URLFOR($Page.AddActionItemToPlanMilestone, null, [retURL='/home/home.jsp'])}";
+    App.addActionItem = function() {
+      window.open(App.addActionItemUrl, "_top");
+      return false;
+    }
+    
+    jQuery(function() {
+      // Attach event handlers to the apex:commandButtons.
+      jQuery('.js-new-functional-domain').on('click', App.addFunctionalDomain);
+      jQuery('.js-new-alert').on('click', App.addAlert);
+      jQuery('.js-new-document').on('click', App.addDocument);
+      jQuery('.js-new-referral').on('click', App.addReferral);
+      jQuery('.js-new-action-item').on('click', App.addActionItem);
+    });
+  </script>
+</apex:page>

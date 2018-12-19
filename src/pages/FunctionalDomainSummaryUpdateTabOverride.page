@@ -1,0 +1,4 @@
+<apex:page showHeader="true" tabstyle="Functional_Domain_Update__c">
+<apex:sectionheader title="Functional Domain Summary Update" subtitle="Home"></apex:sectionheader>
+    <apex:ListViews type="Functional_Domain_Update__c" />
+</apex:page>

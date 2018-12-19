@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Individual Email</value>
+        </caseValues>
+        <name>contact_email</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Individual Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Individual Names</value>
+        </caseValues>
+        <name>contact_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Address</value>
+        </caseValues>
+        <name>other_address_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical City</value>
+        </caseValues>
+        <name>other_city_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Country</value>
+        </caseValues>
+        <name>other_country_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical State/Province</value>
+        </caseValues>
+        <name>other_state_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Street</value>
+        </caseValues>
+        <name>other_street_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Zip/Postal Code</value>
+        </caseValues>
+        <name>other_zip_contact</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- This field will be ticked if the user has an active user account --></help>
+        <label><!-- Active User Account --></label>
+        <name>Active_UserAcct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Middle Name --></label>
+        <name>Contact_Middle_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Note --></label>
+        <name>Contact_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person Profession Role --></label>
+        <name>Contact_Person_Profession_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Individual Preferred Name --></help>
+        <label><!-- Individual Preferred Name --></label>
+        <name>Individual_Preferred_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Behalf Of --></label>
+        <name>On_Behalf_Of__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>Organization1__c</name>
+        <picklistValues>
+            <masterLabel>CFD</masterLabel>
+            <translation><!-- CFD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLBC</masterLabel>
+            <translation><!-- CLBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAA</masterLabel>
+            <translation><!-- DAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPBC</masterLabel>
+            <translation><!-- EPBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HA</masterLabel>
+            <translation><!-- HA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IFSN</masterLabel>
+            <translation><!-- IFSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRACTITIONER</masterLabel>
+            <translation><!-- PRACTITIONER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>Organization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Indicator --></label>
+        <name>Primary_Contact_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Identifying Number --></label>
+        <name>Professional_Identifying_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Fraser Region</masterLabel>
+            <translation><!-- Fraser Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Region</masterLabel>
+            <translation><!-- Interior Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Region</masterLabel>
+            <translation><!-- Northern Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vancouver Coastal Region</masterLabel>
+            <translation><!-- Vancouver Coastal Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vancouver Island Region</masterLabel>
+            <translation><!-- Vancouver Island Region --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship to Individual --></label>
+        <name>Relationship_to_Individual__c</name>
+        <picklistValues>
+            <masterLabel>CLBC Worker</masterLabel>
+            <translation><!-- CLBC Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAA</masterLabel>
+            <translation><!-- DAA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foster Parent</masterLabel>
+            <translation><!-- Foster Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Authority</masterLabel>
+            <translation><!-- Legal Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse</masterLabel>
+            <translation><!-- Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician</masterLabel>
+            <translation><!-- Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Teacher</masterLabel>
+            <translation><!-- Resource Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Advocate</masterLabel>
+            <translation><!-- Self-Advocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Worker</masterLabel>
+            <translation><!-- Social Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher</masterLabel>
+            <translation><!-- Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Therapist</masterLabel>
+            <translation><!-- Therapist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship to Individual (if Other) --></label>
+        <name>Relationship_to_Individual_if_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Location --></label>
+        <name>Service_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Team Member Role --></label>
+        <name>Support_Team_Member_Role__c</name>
+        <picklistValues>
+            <masterLabel>IFSN</masterLabel>
+            <translation><!-- IFSN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Active</masterLabel>
+            <translation><!-- Not Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Team</masterLabel>
+            <translation><!-- Support Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>CLBC Worker</masterLabel>
+            <translation><!-- CLBC Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse</masterLabel>
+            <translation><!-- Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician</masterLabel>
+            <translation><!-- Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Teacher</masterLabel>
+            <translation><!-- Resource Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Worker</masterLabel>
+            <translation><!-- Social Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher</masterLabel>
+            <translation><!-- Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Therapist</masterLabel>
+            <translation><!-- Therapist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Phone Number --></label>
+        <name>Work_Phone_Number__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

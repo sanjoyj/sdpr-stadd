@@ -1,0 +1,3 @@
+<apex:page standardController="Case" showHeader="false" sidebar="false" >
+        <span style="background-color:#5183EE ;color:white; font-weight: bold; font-size: 17pt; display: block; text-align:center"><apex:outputField value="{!Case.contact.name}" /></span>
+</apex:page>

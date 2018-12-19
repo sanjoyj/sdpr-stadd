@@ -1,0 +1,48 @@
+<apex:page contentType="text/css" showheader="false" standardStylesheets="false">
+    .btns {
+      margin-bottom: 1em;
+    }
+    .btns .btn {
+      margin: 0px 3px;
+    }
+    .btn.flag {
+      padding: 4px 3px 4px 22px;
+    }
+    .btn.flag.red {
+      background: url('/img/samples/flag_red.gif') 3px 2px no-repeat, #E8E8E9 url('/img/alohaSkin/btn_sprite.png') repeat-x right top
+    }
+    .btn.flag.green {
+      background: url('/img/samples/flag_green.gif') 3px 2px no-repeat, #E8E8E9 url('/img/alohaSkin/btn_sprite.png') repeat-x right top
+    }
+    
+    .btn.bg-green {
+        color: white;
+        background: #7eb47e;
+    }
+    
+    .gth span.icon {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      margin-right: 0.5em;
+    }
+    .gth span.icon.exclamation {
+      background: url('/img/func_icons/util/alert16.gif') top left no-repeat;
+    }
+    .gth span.icon.red-flag {
+      background: url('/img/samples/flag_red.gif') top left no-repeat;
+    }
+    .gth span.icon.group{
+    background: url('/img/icon/groups16.png') top left no-repeat;
+    }
+    .gth span.icon.green-flag {
+      background: url('/img/samples/flag_green.gif') top left no-repeat;
+    }
+    img.loadingSpinner {
+        width: 16px;
+        height: 16px;
+        padding: 0px 1em;
+        position: relative;
+        top: 2px;
+    }
+</apex:page>

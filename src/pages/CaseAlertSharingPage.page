@@ -1,0 +1,7 @@
+<apex:page Standardcontroller="Case_Alert__c" extensions="CaseAlertSharingController" tabStyle="Case_Alert__c" id="thepage">
+
+
+	<apex:pageMessages />
+	<apex:detail subject="{!id}" rendered="{!rend}"/>
+
+</apex:page>

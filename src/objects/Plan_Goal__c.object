@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>PlanGoalTabOverride</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>Help_PlanGoals</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Goals comprise the plan.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Area_of_Importance__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The developmental area as described in the functional domain summaries</inlineHelpText>
+        <label>Area of Importance</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Personal Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self-Determination</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inter-Personal Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Inclusion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rights</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Emotional Well-Being</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Physical Well-Being</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Material Well-Being</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Case_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Plan__r.Case__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Goal_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If goal type is &quot;Other&quot;, please enter an unique description in &quot;Goal Name&quot;.</inlineHelpText>
+        <label>Goal Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Positive Relationships</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety in My Home &amp; Community</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Community Connections</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decision-making Agreements</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health &amp; Wellness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financial Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Goal__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Goal</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Important_steps_to_reach_this_goal__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>List the most important steps that the individual, family, support network and support team must do for the individual to achieve this goal.</inlineHelpText>
+        <label>Important steps to reach this goal</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Important_to_me_because__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Why this goal is important to the individual and how the goal will improve the individual&apos;s quality of life.</inlineHelpText>
+        <label>Important to me because</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Plan__c</fullName>
+        <description>Plan</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Plan</inlineHelpText>
+        <label>Plan</label>
+        <referenceTo>Plan__c</referenceTo>
+        <relationshipLabel>Plan Goals</relationshipLabel>
+        <relationshipName>Goals</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Future Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Longer Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <formula>Plan__r.Case__r.Subject</formula>
+        <label>Subject</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Plan Goal</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>true</encrypted>
+        <label>Goal Name (If Goal Type is &apos;Other&apos;)</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Plan Goals</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Closed</fullName>
+        <active>true</active>
+        <label>Closed</label>
+        <picklistValues>
+            <picklist>Area_of_Importance__c</picklist>
+            <values>
+                <fullName>Emotional Well-Being</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inter-Personal Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Well-Being</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Well-Being</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Determination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Inclusion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Goal_Type__c</picklist>
+            <values>
+                <fullName>Community Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision-making Agreements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Wellness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Positive Relationships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety in My Home %26 Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>Area_of_Importance__c</picklist>
+            <values>
+                <fullName>Emotional Well-Being</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inter-Personal Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Material Well-Being</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Well-Being</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Self-Determination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Inclusion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Goal_Type__c</picklist>
+            <values>
+                <fullName>Community Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision-making Agreements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health %26 Wellness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Positive Relationships</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety in My Home %26 Community</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Required</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Plan__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Plan__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Subject__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Plan__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Subject__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Plan__c</searchFilterFields>
+        <searchResultsAdditionalFields>Plan__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Only_Owner_and_Internal_can_Edit</fullName>
+        <active>true</active>
+        <description>**丄具슞七풑 妶斏麛좶랒웇쟄颡ꁚ 苻膃炌緄饩怞떦橴鰀 蔵筫踱峬姷됴僦껓쓑 脇麳ꉳ嶓鲭萆菙麴言 尺珸奖췼믵殁勝癃谀 戩滂嘏跐瘋鞁삘퓵圀 塊釚쑭騭燮詐櫃뷖룑 呣늆恊랼昃냠먉쑣쟑 枸씻槬劜워憡滔摑껑 洇隄刈妾牌撕듣ꍄ뿑 裩獊漬峈뽘疍羑惛鄀 蔵筫踱峬姷됴僦껓쓑.&amp;\\ ䷀仄䷀䷀䷈56308!</description>
+        <errorConditionFormula>AND 
+( 
+NOT(ISNEW()),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Director&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Navigator&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Coordinator&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Project Administrator&quot;, 
+CreatedById &lt;&gt; $User.Id,
+Plan__r.Case__r.OwnerId &lt;&gt;$User.Id    
+)</errorConditionFormula>
+        <errorMessage>Only the record creator or a System Administrator can edit this record.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a0o/e?CF00Ni000000BeUaq={!Plan__c.Name}&amp;CF00Ni000000BeUaq_lkid={!Plan__c.Id}&amp;Name=**&amp;retURL={!Plan__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Plan_Goal_Help</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Plan Goal Help</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>window.open(&apos;/resource/1457650977000/Help_PlanGoals&apos;)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Email_to_CaseTeam</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Notify the Case Team</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT (&quot;/soap/ajax/36.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/36.0/apex.js&quot;)} 
+try
+{
+var CaseId = &apos;{!Plan_Goal__c.Case_ID__c}&apos;; 
+var PlanGoalId=&apos;{!Plan_Goal__c.Id}&apos;; 
+sforce.apex.execute(&quot;SendEmailToCaseTeam&quot;,&quot;SendEmail&quot;,{caseId:CaseId,childId:PlanGoalId}); 
+alert(&quot;An email has been sent to the case team with the changes you have made in Plan Goal.&quot;);
+		document.location.reload(true);
+}catch(e){ 
+		alert(&quot;Your email to the case team could not be sent. Please create the case team or contact system administrator&quot;);
+}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,16 @@
+<apex:page standardController="Referral__c" extensions="AcceptCaseController"> 
+	<apex:form >
+		<apex:pageBlock >
+		 <apex:pageMessages /><br/>
+			 <apex:pageBlockSection id="thePageBlockAddress1" title="Assessment Documents" columns="1" showHeader="false" collapsible="false">
+				<apex:pageBlockSectionItem >
+					<apex:outputtext value="Do you really want to convert this referral to Case?" />
+				</apex:pageBlockSectionItem> 
+				<apex:pageBlockSectionItem >
+				   <apex:commandButton action="{!cancel}" value="Cancel" /> 
+				   <apex:commandButton action="{!Acceptcase}" onclick="this.onclick=function(){return false;}" value="Confirm Accept Case"/>
+				</apex:pageBlockSectionItem>   
+			 </apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

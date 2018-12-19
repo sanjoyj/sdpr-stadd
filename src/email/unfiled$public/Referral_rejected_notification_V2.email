@@ -1,0 +1,7 @@
+<p><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">Hello,&nbsp;</span></p>
+<p><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">A referral you created in Collaborate has been rejected.</span></p>
+<p><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">Referral ID:&nbsp;{!Referral__c.Name}</span><br /> <span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">Reason for Rejection: {!Referral__c.Sub_Status__c}</span></p>
+<p style="margin: 0cm; margin-bottom: .0001pt;"><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">If you require further information, please either login to Collaborate using the link below or contact STADD Support at 1-855-356-5609.</span></p>
+<p style="margin: 0in; margin-bottom: .0001pt;"><span lang="EN-CA" style="margin: 0px; font-family: 'Calibri',sans-serif; font-size: 11pt;"><a href="https://main-stadd-force-com.developmental-disability-support.gov.bc.ca/CommunitiesLogin">https://main-stadd-force-com.developmental-disability-support.gov.bc.ca/CommunitiesLogin</a></span></p>
+<p style="margin: 0cm; margin-bottom: .0001pt;"><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">&nbsp;</span></p>
+<p style="margin: 0cm; margin-bottom: .0001pt;"><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">Thank You,</span><br /><span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif';">STADD Administrator</span></p>

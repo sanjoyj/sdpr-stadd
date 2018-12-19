@@ -1,0 +1,4 @@
+<apex:page showHeader="true" tabstyle="Case_Document__c">
+<apex:sectionheader title="Case Documents" subtitle="Home"></apex:sectionheader>
+    <apex:ListViews type="Case_Document__c" />
+</apex:page>

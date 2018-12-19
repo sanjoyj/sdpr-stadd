@@ -1,0 +1,5 @@
+<apex:page standardController="Protocols_and_Safeguards__c" showHeader="false" sidebar="false" >
+        <span style="background-color:#5183EE ;color:white; font-weight: bold; font-size: 17pt; display: block; text-align:center">
+            <apex:outputField value="{!Protocols_and_Safeguards__c.Case__r.Contact.Name}" />
+        </span>
+</apex:page>

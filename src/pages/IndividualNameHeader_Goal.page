@@ -1,0 +1,5 @@
+<apex:page standardController="Plan_Goal__c" showHeader="false" sidebar="false" >
+        <span style="background-color:#5183EE ;color:white; font-weight: bold; font-size: 17pt; display: block; text-align:center">
+            <apex:outputField value="{!Plan_Goal__c.Plan__r.Case__r.contact.Name}" />
+        </span>
+</apex:page>

@@ -1,0 +1,85 @@
+<apex:page Standardcontroller="Case" extensions="UploadAssessmentDocController" tabStyle="Functional__c" Id="page">
+
+        <!-- Include jQuery resource -->
+<apex:includeScript value="{!URLFOR($Resource.jquery)}"/>
+  <script type="text/javascript">
+    /*   Commented as not  required post CC  release post R1.2
+      var j$ = jQuery.noConflict();
+      
+        j$(document).ready(function(){
+            
+            // This function validates if the name of the file selected in the CONSENT FORM file selector contains 
+             // last name of the individual.
+             
+            j$('[id$=file]').on("change",function() {
+                  var file = j$("[id $='file']");
+                  var arrFilePath = file.val().split("\\");
+                  var doc;
+                  var docname;
+                  doc = arrFilePath[arrFilePath.length - 1];
+
+                    doc = doc.toUpperCase();
+                    doc = doc.split(".");                   
+                    docname = doc[doc.length - 2];                                 
+                  var lastName = "{!accname}";
+                  var firstName = "{!accfirstname}";
+                            
+                  
+                  lastName= lastName.toUpperCase();
+                  firstName= firstName.toUpperCase();
+
+                  //Check if the fileName contains lastName
+                  if(lastName != '' || lastName != null){         		
+              		
+                      if((docname.indexOf(lastName) != -1 || docname.indexOf(firstName) != -1) || (lastName.indexOf(docname) != -1 || firstName.indexOf(docname) != -1)){
+                          alert("Please rename your file. It is important not to include personal information in the file name.");                    
+                          //remove the selected file
+                          file.val('');
+                      }
+                  } 
+            });
+ 
+        });
+        */
+  </script>  
+
+ <apex:form id="theForm">
+	 <script>
+	      function setResult(){
+	      			  
+	                   document.getElementById('page:theForm:thePageBlock:thePageBlockAddress1:accname').readOnly=true;
+	       }
+	      window.onload = setResult;
+	</script>
+	
+	 <apex:pageMessages id="messageid"/><br/>
+	     <apex:pageBlock id="thePageBlock" title="Upload Assessment Document">
+      <apex:pageBlockButtons >
+         <apex:commandButton action="{!Upload}" value="Upload" />
+         <apex:commandButton action="{!Uploadandadd}" value="Upload and Add another file"/>  
+         <apex:commandButton action="{!cancel}" value="Cancel" />
+      </apex:pageBlockButtons>
+      
+      
+      <!--   <apex:repeat value="{!casdocumentlst}" var="cdoc">	 -->
+       
+       	 <apex:pageBlockSection id="thePageBlockAddress1" title="Assessment Documents" >
+		 <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+       	 <apex:inputField label="" value="{!casdocument.Category__c}" id="accname" style="display:none;visibility:hidden"/>
+       	 <!--  <apex:outputtext label="Assessment Category" value="Assessment" /> -->
+       	 <!--  <apex:pageBlockSectionItem > </apex:pageBlockSectionItem> -->
+         <apex:inputField label="Assessment Type" value="{!casdocument.Sub_Category__c}" required="true" />    
+         <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+         <apex:outputLabel value="Assessment File" for="Form1"/>
+         <apex:pageBlockSectionItem > </apex:pageBlockSectionItem>
+         </apex:pageBlockSection>
+               
+         <apex:pageBlockSection >
+         <apex:inputFile value="{!vDocument.body}" filename="{!vDocument.name}" id="file" />     
+         
+         
+         </apex:pageBlockSection>
+  
+	</apex:pageBlock>
+</apex:form>
+</apex:page>

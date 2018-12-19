@@ -1,0 +1,4 @@
+<apex:page showHeader="true" tabstyle="Account">
+<apex:sectionheader title="Individuals" subtitle="Home"></apex:sectionheader>
+    <apex:ListViews type="Account" />
+</apex:page>

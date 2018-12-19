@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>All_portal_users_see_collaborative_case_alerts</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All portal users see collaborative case alerts</label>
+        <sharedTo>
+            <group>All_External_Portal_users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Collaborative</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Everyone_sees_collaborative_Case_Alerts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Everyone sees collaborative Case Alerts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Collaborative</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>share_restricted_alerts_with_internal_users_only</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>share restricted alerts with internal users only</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Restricted</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Support and Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Supports and Services</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Supports and Services --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone Number --></label>
+        <name>Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-government-service indicator --></label>
+        <name>Non_government_service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Providing Service/Support --></label>
+        <name>Provider__c</name>
+    </fields>
+    <fields>
+        <help><!-- End Date Reason needs to be completed if you enter an end date. --></help>
+        <label><!-- Service End Date Reason --></label>
+        <name>Service_End_Date_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service End Date --></label>
+        <name>Service_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Service Start Date --></label>
+        <name>Service_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service / Support Type --></label>
+        <name>Service_Support_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort --></label>
+        <name>Sort__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Service End Date should always be equal to or greater than the Start Date --></errorMessage>
+        <name>End_Date_greater_than_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify a reason for this end date. --></errorMessage>
+        <name>End_Date_requires_End_Date_Reason2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The case owner can only edit Contact Name, Contact Phone number, End date, End date reason and Notes fields --></errorMessage>
+        <name>Limit_EDIT_permission_for_case_owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the record creator or the case owner or a System Administrator can edit this record. --></errorMessage>
+        <name>Only_Owner_and_Internal_can_Edit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_Email_to_Case_Team --></label>
+        <name>Send_Email_to_Case_Team</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Support_and_Services_Help --></label>
+        <name>Support_and_Services_Help</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,4 @@
+<apex:page showHeader="true" tabstyle="Case_Note__c">
+<apex:sectionheader title="Case Notes" subtitle="Home"></apex:sectionheader>
+    <apex:ListViews type="Case_Note__c" />
+</apex:page>

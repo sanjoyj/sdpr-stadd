@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Collaborative</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Collaborative</label>
+        <sharedTo>
+            <group>All_External_Portal_users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Restricted_Indicator__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Internal_Collaborative</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Internal Collaborative</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>Restricted_Indicator__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Internal_Restricted</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Internal Restricted</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>Restricted_Indicator__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

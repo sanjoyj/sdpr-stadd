@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Mapping object</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mapping objects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Context prompt --></label>
+        <name>Context_prompt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Domain Type --></label>
+        <name>Functional_Domain_Type__c</name>
+        <picklistValues>
+            <masterLabel>Behavioral and Emotional Health</masterLabel>
+            <translation><!-- Behavioral and Emotional Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Participation Skills and Social Inclusion</masterLabel>
+            <translation><!-- Community Participation Skills and Social Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Space Only</masterLabel>
+            <translation><!-- Family Space Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FunctionalDomainPage</masterLabel>
+            <translation><!-- FunctionalDomainPage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Status</masterLabel>
+            <translation><!-- Health Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language and Communication</masterLabel>
+            <translation><!-- Language and Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning Styles and Education</masterLabel>
+            <translation><!-- Learning Styles and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health: Diagnostic Information</masterLabel>
+            <translation><!-- Mental Health: Diagnostic Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Living Skills</masterLabel>
+            <translation><!-- Personal Living Skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Functioning</masterLabel>
+            <translation><!-- Physical Functioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PortalUserRegistration</masterLabel>
+            <translation><!-- PortalUserRegistration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reason and Decision-Making</masterLabel>
+            <translation><!-- Reason and Decision-Making --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReferralPage1</masterLabel>
+            <translation><!-- ReferralPage1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReferralPage2</masterLabel>
+            <translation><!-- ReferralPage2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReferralPage3</masterLabel>
+            <translation><!-- ReferralPage3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Interaction and Self-Determination</masterLabel>
+            <translation><!-- Social Interaction and Self-Determination --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,3990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <content>CaseNewOverride</content>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Standard</fullName>
+        <description>all the values</description>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Adult Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manage Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Picture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plan</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>Aboriginal_Band__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Aboriginal Band</label>
+        <referenceTo>Aboriginal_Band__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Aboriginal_Origin__c</fullName>
+        <externalId>false</externalId>
+        <label>Aboriginal Origin</label>
+        <picklist>
+            <picklistValues>
+                <fullName>First Nation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>First Nation, Inuit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>First Nation, Metis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>First Nation, Metis, Inuit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inuit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Metis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Metis, Inuit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Achieved_Employment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Achieved Employment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Activity_Status_Start_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inactive Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Age_At_Referral__c</fullName>
+        <externalId>false</externalId>
+        <formula>Referral__r.Age_at_Referral__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age At Referral</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alert_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE( IF( ISBLANK( $User.ContactId ), 
+                 IF( Number_of_Case_Alerts__c &gt; 0 , 
+                  &quot;/img/samples/flag_red.gif&quot;,
+                  &quot;/img/samples/flag_green.gif&quot;),
+                 IF( Number_of_Alerts_for_Portal__c &gt; 0 , 
+                  &quot;/img/samples/flag_red.gif&quot;,
+                   &quot;/img/samples/flag_green.gif&quot;)), &quot;Indicator Flag&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alert Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Closed_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Closed Reason</label>
+        <picklist>
+            <controllingField>Status</controllingField>
+            <picklistValues>
+                <fullName>Achieved Program Objectives</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chose Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moved out of Service Area</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opt Out - Other Reasons</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outside of Age Requirements</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Contact - Inactive</fullName>
+                <default>false</default>
+                <controllingFieldValues>Closed</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Case_Team_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Team Size</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case_id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_is_i__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Case is Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cell_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Cell_Phone__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cell Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Community__c</fullName>
+        <description>Populated from referral.</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Community</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connected_with_Employment_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Connected with Employment Services</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Consent_form__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Consent form</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Current_Age__c</fullName>
+        <externalId>false</externalId>
+        <formula>FLOOR((TODAY()-  Account.PersonContact.Birthdate  )/365.25+0.001)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_School__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Current School</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DAA_or_other_cultural_or_spiritual_repre__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>DAA or other cultural or spiritual representative involvement</inlineHelpText>
+        <label>Cultural/Spiritual Representative</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_Referred__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date Referred</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_referral_accepted__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Date Referral Accepted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encrypted>true</encrypted>
+        <inlineHelpText>Referral Notes</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Diagnosis_Assessment_Date__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Diagnosis Assessment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Diagnosis_Confirmation_Obtained_Indicato__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Diagnosis Obtained Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eligibility_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Eligibility Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>DD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSI FASD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PSI ASD/PDD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Employment Details</label>
+        <picklist>
+            <controllingField>Achieved_Employment__c</controllingField>
+            <picklistValues>
+                <fullName>Employed before STADD FT</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employed after STADD FT</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employed before STADD PT</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employed after STADD PT</fullName>
+                <default>false</default>
+                <controllingFieldValues>checked</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Programs_Connected__c</fullName>
+        <externalId>false</externalId>
+        <label>Employment Programs Connected</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Post Secondary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MCFD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Federal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aboriginal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EPBC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High school</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Volunteer Placement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Existing_Protocols_Safeguards__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Existing Protocols/Safeguards</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Foundry_BC_Referral__c</fullName>
+        <description>**坤랚뙈身焽豈&amp;\404!</description>
+        <externalId>false</externalId>
+        <formula>Referral__r.Foundry_BC_Referral__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Individual/youth was directly referred through a Foundry service hub location.</inlineHelpText>
+        <label>Foundry BC Referral</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Has_a_legal_authority__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has a legal authority?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Health_Care_Plan_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Health Care Plan Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Home_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.HomePhone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Home Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IEP_Completed_and_on_File_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IEP Completed and on File Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IEP_on_File__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IEP on File</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Individual_Attached_to_Physician__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Individual Attached to Physician</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Individual_Consent_on_File_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Individual Consent on File Indicator</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Individual Consent on File Indicator</inlineHelpText>
+        <label>Individual Consent on File Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Individual_Preferred_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Individual_Preferred_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Individual Preferred Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsSelfServiceClosed</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Is_primary_contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is primary contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_the_Individual_Attending_School__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is the Individual Attending School</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_the_Individual_eligible_for_CLBC_Serv__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is the Individual eligible for CLBC Serv</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_the_individual_being_supported_by_CFD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is the individual being supported by CFD</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Language_in_the_Home_Other__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Language in the Home (Other)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_in_the_Home__c</fullName>
+        <externalId>false</externalId>
+        <label>Language in the Home</label>
+        <picklist>
+            <picklistValues>
+                <fullName>English</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>French</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mandarin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cantonese</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Punjabi</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chinese, n.o.s.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>German</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tagalog</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Persian (Farsi)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>Location</description>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <picklist>
+            <controllingField>Region__c</controllingField>
+            <picklistValues>
+                <fullName>Abbotsford</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bulkley / Stikine</fullName>
+                <default>false</default>
+                <controllingFieldValues>Northern Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Campbell River</fullName>
+                <default>false</default>
+                <controllingFieldValues>Vancouver Island Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cariboo</fullName>
+                <default>false</default>
+                <controllingFieldValues>Interior Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chilliwack</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>City Centre</fullName>
+                <default>false</default>
+                <controllingFieldValues>Vancouver Coastal Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comox Valley</fullName>
+                <default>false</default>
+                <controllingFieldValues>Vancouver Island Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Downtown Eastside</fullName>
+                <default>false</default>
+                <controllingFieldValues>Vancouver Coastal Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>East Kootenay</fullName>
+                <default>false</default>
+                <controllingFieldValues>Interior Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fraser / Cascades</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gold Trail</fullName>
+                <default>false</default>
+                <controllingFieldValues>Interior Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Haida Gwaii / Prince Rupert</fullName>
+                <default>false</default>
+                <controllingFieldValues>Northern Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kamloops</fullName>
+                <default>false</default>
+                <controllingFieldValues>Interior Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Langley</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mission</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nanaimo</fullName>
+                <default>false</default>
+                <controllingFieldValues>Vancouver Island Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nechako Lakes</fullName>
+                <default>false</default>
+                <controllingFieldValues>Northern Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Westminster</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Parksville / Qualicum</fullName>
+                <default>false</default>
+                <controllingFieldValues>Vancouver Island Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Peace North</fullName>
+                <default>false</default>
+                <controllingFieldValues>Northern Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prince George</fullName>
+                <default>false</default>
+                <controllingFieldValues>Northern Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quesnel</fullName>
+                <default>false</default>
+                <controllingFieldValues>Northern Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ridge Meadows</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South Okanagan</fullName>
+                <default>false</default>
+                <controllingFieldValues>Interior Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surrey East</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surrey North</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surrey South</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tri-Cities</fullName>
+                <default>false</default>
+                <controllingFieldValues>Fraser Region</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name_of_Referrer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Name of Referrer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Alerts_for_Portal__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Alerts for Portal</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Case_Alerts__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Case Alerts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Crisis_Plans__c</fullName>
+        <description>The sole purpose of this roll -up summary field is to provide current count of Crisis Plans to the Crisis Plan Indicator field. This field is not visible to any profiles and not added to any page layouts.</description>
+        <externalId>false</externalId>
+        <label>Number of Crisis Plans</label>
+        <summaryFilterItems>
+            <field>Plan__c.Plan_Type__c</field>
+            <operation>equals</operation>
+            <value>Crisis Plan</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Plan__c.Plan_Status__c</field>
+            <operation>equals</operation>
+            <value>Draft in Progress, In Place/ Signed-off</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Plan__c.Case__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Plans__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Plans</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Protocals__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Protocals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Office</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Prince George/Haida Gwaii</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surrey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kamloops/Merritt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nanaimo/Comox Valley</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Self / Direct Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Supported Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Other_Agencies_Involved__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Other Agencies Involved</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Other</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Person_Profile_Completion_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Person Profile Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Personal_Profile_Completion_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Personal Profile Completed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Personal_Profile_on_File_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Personal Profile on File Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Plan_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE( IF( Number_of_Crisis_Plans__c &gt; 0 , 
+          &quot;/img/samples/flag_red.gif&quot;,
+          &quot;/img/samples/flag_green.gif&quot;),
+        &quot;Indicator Flag&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Crisis Plan Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Referral_Contact__r.Contact_Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Contact Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Cases (Primary Contact)</relationshipLabel>
+        <relationshipName>Cases1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_is_Individual_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Cannot be checked if individual has a legal authority</inlineHelpText>
+        <label>Primary Contact is Individual Indicator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Referral_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Case_Contact__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Very High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Protocol_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE( IF( Number_of_Protocals__c &gt; 0 , 
+          &quot;/img/samples/flag_red.gif&quot;,
+          &quot;/img/samples/flag_green.gif&quot;),
+        &quot;Indicator Flag&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Protocol Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Psychological_assessment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Psychological assessment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Psychologist_Assessment_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Psychologist Assessment Location</label>
+        <picklist>
+            <picklistValues>
+                <fullName>School</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Psychologist_Contact_Email__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Psychologist Contact Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Psychologist_Contact_Phone_Number__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Psychologist Contact Phone Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Psychologist_First_Name__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Psychologist First Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Psychologist_Last_Name__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Psychologist Last Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Psychologist_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Psychologist Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Psychologist_Name_text__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Psychologist Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moved out of Region</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Choose Private</fullName>
+                <default>false</default>
+                <cssExposed>false</cssExposed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Receiving_Services_on_Reserve__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Receiving CLBC Services on Reserve</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Referral__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referral</label>
+        <referenceTo>Referral__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Referred_to_Long_Term_Care__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Referred to Long Term Care</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Referring_Organization__c</fullName>
+        <externalId>false</externalId>
+        <label>Referring Organization</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DAA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Region</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Northern Region</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fraser Region</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior Region</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vancouver Island Region</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vancouver Coastal Region</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Registered__c</fullName>
+        <externalId>false</externalId>
+        <label>Registered?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_to_Individual__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Primary_Referral_Contact__r.Relationship_Subtype__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Relationship to Individual</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Residence_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Residence Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cluster Living</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Homeless – Shelter / Couch Surfing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Homeless – Street / Tent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Homeshare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent Rental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Living in Foster Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Living with Parent / Relative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semi-Independent Living</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staffed Residential</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Supported Home Living / Apartment Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Self_Identifies_as_Aboriginal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Self Identifies as Aboriginal</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Special_limitations_hearing_sight_mob__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Special considerations</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>true</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Picture</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plan</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manage Plan</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Adult Support</fullName>
+                <default>false</default>
+                <closed>false</closed>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <closed>true</closed>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <encrypted>true</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Transition_Package_Sent_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Transition Package Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Transition_Package_Sent__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Transition Package Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Self/Direct Family Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UniqueRec__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>ONLY ONE CASE PER PERSON ALLOWED</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ONLY ONE CASE PER PERSON ALLOWED</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Waiting_for_CFD_funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Waiting for CFD funding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Waiting_for_CLBC_funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Waiting for CLBC funding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Waiting_for_EPBC_funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Waiting for EPBC funding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Waiting_for_Health_funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Waiting for Health funding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Waiting_for_School_funding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Waiting for School funding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>What_services_they_are_waiting_for__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>What services they are waiting for</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Year_13__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Year 13</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>Community__c</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <group>All_Directors</group>
+            <group>All_External_Portal_users</group>
+            <role>Project_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Coastal_Region_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>Coastal Region</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Picture,Plan,Manage Plan,Adult Support</value>
+        </filters>
+        <label>Coastal Region Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Coastal_Region</role>
+            <role>Navigator_Coastal_Region</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Coastal_Region_Transfer_In</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Queue</filterScope>
+        <label>Coastal Region Transfer In</label>
+        <queue>Coastal_Region_Transfer_In</queue>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Coastal_Region</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fraser_Region_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>Fraser Region</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Picture,Plan,Manage Plan,Adult Support</value>
+        </filters>
+        <label>Fraser Region Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Fraser_Region</role>
+            <role>Navigator_Fraser_Region</role>
+            <role>Project_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Fraser_Region_Transfer_In</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Fraser Region Transfer In</label>
+        <queue>Fraser_Region_Transfer_In</queue>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Fraser_Region</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Interior_Region_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>Interior Region</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Picture,Plan,Manage Plan,Adult Support</value>
+        </filters>
+        <label>Interior Region Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Interior_Region</role>
+            <role>Navigator_Interior_Region</role>
+            <role>Project_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Interior_Region_Transfer_In</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Interior Region Transfer In</label>
+        <queue>Interior_Region_Transfer_In</queue>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Interior_Region</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+        <sharedTo>
+            <group>All_Navigators</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+        <sharedTo>
+            <group>All_Navigators</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Northern_Region_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>Northern Region</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Picture,Plan,Manage Plan,Adult Support</value>
+        </filters>
+        <label>Northern Region Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Northern_Region</role>
+            <role>Navigator_Northern_Region</role>
+            <role>Project_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Northern_Region_Transfer_In</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Northern Region Transfer In</label>
+        <queue>Northern_Region_Transfer_In</queue>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Northern_Region</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Vancouver_Coastal_Region_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>Vancouver Coastal Region</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Picture,Manage Plan,Adult Support,Plan</value>
+        </filters>
+        <label>Vancouver Coastal Region Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Fraser_Region</role>
+            <role>Navigator_Fraser_Region</role>
+            <role>Project_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Vancouver_Coastal_Region_Transfer_In_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Vancouver Coastal Region Transfer In</label>
+        <queue>Vancouver_Coastal_Region_Transfer_In</queue>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Fraser_Region</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Vancouver_Island_Region_Open_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>Vancouver Island Region</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Picture,Plan,Manage Plan,Adult Support</value>
+        </filters>
+        <label>Vancouver Island Region Open Cases</label>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Vancouver_Island_Region</role>
+            <role>Navigator_Vancouver_Island_Region</role>
+            <role>Project_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Vancouver_Island_Region_Transfer_In</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Is_primary_contact__c</columns>
+        <columns>Primary_Contact_Full_Name__c</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Location__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>Alert_Indicator__c</columns>
+        <columns>Plan_Indicator__c</columns>
+        <columns>Protocol_Indicator__c</columns>
+        <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Vancouver Island Region Transfer In</label>
+        <queue>Vancouver_Island_Region_Transfer_In</queue>
+        <sharedTo>
+            <group>All_Coordinators</group>
+            <role>Director_Vancouver_Island_Region</role>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Closed</fullName>
+        <active>true</active>
+        <businessProcess>Standard</businessProcess>
+        <label>Closed</label>
+        <picklistValues>
+            <picklist>Aboriginal_Origin__c</picklist>
+            <values>
+                <fullName>First Nation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Metis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Metis%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metis%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Closed_Reason__c</picklist>
+            <values>
+                <fullName>Achieved Program Objectives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chose Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved out of Service Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contact - Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt Out - Other Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outside of Age Requirements</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Eligibility_Type__c</picklist>
+            <values>
+                <fullName>DD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSI ASD%2FPDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSI FASD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Details__c</picklist>
+            <values>
+                <fullName>Employed after STADD FT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed after STADD PT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed before STADD FT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed before STADD PT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Programs_Connected__c</picklist>
+            <values>
+                <fullName>Aboriginal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High school</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volunteer Placement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Language_in_the_Home__c</picklist>
+            <values>
+                <fullName>Cantonese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chinese%2C n%2Eo%2Es%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mandarin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Persian %28Farsi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Punjabi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tagalog</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Abbotsford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulkley %2F Stikine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campbell River</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cariboo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilliwack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>City Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comox Valley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Downtown Eastside</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>East Kootenay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fraser %2F Cascades</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold Trail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haida Gwaii %2F Prince Rupert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kamloops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Langley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nanaimo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nechako Lakes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Westminster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parksville %2F Qualicum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peace North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince George</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quesnel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ridge Meadows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Okanagan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tri-Cities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kamloops%2FMerritt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nanaimo%2FComox Valley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince George%2FHaida Gwaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Self %2F Direct Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supported Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Very High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Psychologist_Assessment_Location__c</picklist>
+            <values>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referring_Organization__c</picklist>
+            <values>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>Fraser Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interior Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vancouver Coastal Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vancouver Island Region</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registered__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Residence_Type__c</picklist>
+            <values>
+                <fullName>Cluster Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless %E2%80%93 Shelter %2F Couch Surfing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless %E2%80%93 Street %2F Tent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeshare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Living in Foster Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Living with Parent %2F Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-Independent Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffed Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supported Home Living %2F Apartment Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Self%2FDirect Family Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Restricted</fullName>
+        <active>true</active>
+        <businessProcess>Standard</businessProcess>
+        <description>A Restricted Case Record means that support team users have a very limited view of this individual’s case. They will only be able to see: Individual name, Individual Case ID, Navigator, Case Status and the Case Record Type.</description>
+        <label>Restricted</label>
+        <picklistValues>
+            <picklist>Aboriginal_Origin__c</picklist>
+            <values>
+                <fullName>First Nation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Metis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Metis%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metis%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Closed_Reason__c</picklist>
+            <values>
+                <fullName>Achieved Program Objectives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chose Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved out of Service Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contact - Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt Out - Other Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outside of Age Requirements</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Eligibility_Type__c</picklist>
+            <values>
+                <fullName>DD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSI ASD%2FPDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSI FASD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Details__c</picklist>
+            <values>
+                <fullName>Employed after STADD FT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed after STADD PT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed before STADD FT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed before STADD PT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Programs_Connected__c</picklist>
+            <values>
+                <fullName>Aboriginal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High school</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volunteer Placement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Language_in_the_Home__c</picklist>
+            <values>
+                <fullName>Cantonese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chinese%2C n%2Eo%2Es%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mandarin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Persian %28Farsi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Punjabi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tagalog</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Abbotsford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulkley %2F Stikine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campbell River</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cariboo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilliwack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>City Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comox Valley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Downtown Eastside</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>East Kootenay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fraser %2F Cascades</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold Trail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haida Gwaii %2F Prince Rupert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kamloops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Langley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nanaimo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nechako Lakes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Westminster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parksville %2F Qualicum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peace North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince George</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quesnel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ridge Meadows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Okanagan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tri-Cities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kamloops%2FMerritt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nanaimo%2FComox Valley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince George%2FHaida Gwaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Self %2F Direct Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supported Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Very High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Psychologist_Assessment_Location__c</picklist>
+            <values>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referring_Organization__c</picklist>
+            <values>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>Fraser Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interior Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vancouver Coastal Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vancouver Island Region</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registered__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Residence_Type__c</picklist>
+            <values>
+                <fullName>Cluster Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless %E2%80%93 Shelter %2F Couch Surfing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless %E2%80%93 Street %2F Tent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeshare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Living in Foster Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Living with Parent %2F Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-Independent Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffed Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supported Home Living %2F Apartment Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Self%2FDirect Family Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <businessProcess>Standard</businessProcess>
+        <description>A Standard Case Record means that the individual’s case is visible to any support team users.</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>Aboriginal_Origin__c</picklist>
+            <values>
+                <fullName>First Nation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Metis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>First Nation%2C Metis%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metis%2C Inuit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Closed_Reason__c</picklist>
+            <values>
+                <fullName>Achieved Program Objectives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chose Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved out of Service Area</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Contact - Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt Out - Other Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outside of Age Requirements</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Eligibility_Type__c</picklist>
+            <values>
+                <fullName>DD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSI ASD%2FPDD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSI FASD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Details__c</picklist>
+            <values>
+                <fullName>Employed after STADD FT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed after STADD PT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed before STADD FT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employed before STADD PT</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employment_Programs_Connected__c</picklist>
+            <values>
+                <fullName>Aboriginal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EPBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High school</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volunteer Placement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Language_in_the_Home__c</picklist>
+            <values>
+                <fullName>Cantonese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chinese%2C n%2Eo%2Es%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mandarin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Persian %28Farsi%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Punjabi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tagalog</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Abbotsford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulkley %2F Stikine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campbell River</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cariboo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chilliwack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>City Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comox Valley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Downtown Eastside</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>East Kootenay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fraser %2F Cascades</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold Trail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Haida Gwaii %2F Prince Rupert</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kamloops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Langley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mission</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nanaimo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nechako Lakes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Westminster</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parksville %2F Qualicum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peace North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince George</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quesnel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ridge Meadows</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Okanagan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey North</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey South</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tri-Cities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>Burnaby</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kamloops%2FMerritt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nanaimo%2FComox Valley</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince George%2FHaida Gwaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surrey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Self %2F Direct Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supported Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Very High</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Psychologist_Assessment_Location__c</picklist>
+            <values>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Choose Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved out of Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opt-Out</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referring_Organization__c</picklist>
+            <values>
+                <fullName>CFD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>School</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>Fraser Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interior Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vancouver Coastal Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vancouver Island Region</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Registered__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Residence_Type__c</picklist>
+            <values>
+                <fullName>Cluster Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless %E2%80%93 Shelter %2F Couch Surfing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeless %E2%80%93 Street %2F Tent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeshare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Living in Foster Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Living with Parent %2F Relative</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semi-Independent Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staffed Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supported Home Living %2F Apartment Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Organization Referral</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Self%2FDirect Family Referral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_Referred__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_referral_accepted__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER_NAME</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewCase</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>MassClose</excludedStandardButtons>
+        <excludedStandardButtons>ChangeStatus</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date_Referred__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date_referral_accepted__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OWNER_NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Region__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Location__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER_NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Cannot_ChangeOwner_with_Closed_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISCHANGED(OwnerId),
+ ISPICKVAL( Status,&apos;Closed&apos;) )</errorConditionFormula>
+        <errorDisplayField>OwnerId</errorDisplayField>
+        <errorMessage>The Case ownership cannot be changed when the Case is in Closed mode</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Reopen_Case_with_Closed_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR (AND(NOT(ISPICKVAL(Status, 
+&apos;Closed&apos;)), RecordTypeId=&apos;0125A000001AlAy&apos;),AND(ISPICKVAL(Status, 
+&apos;Closed&apos;), ISPICKVAL(PRIORVALUE(Status),&quot;Closed&quot;), RecordTypeId&lt;&gt;&apos;0125A000001AlAy&apos;))</errorConditionFormula>
+        <errorDisplayField>Status</errorDisplayField>
+        <errorMessage>The case cannot be re-opened in Closed mode. Please ensure neither the Case Record Type nor the Case Status is in Closed stage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Navigator_reassign_owner</fullName>
+        <active>true</active>
+        <description>**碈擴斎鹶릐ꆒ&amp;\\ 804!.</description>
+        <errorConditionFormula>AND(
+ISCHANGED(OwnerId),
+NOT( $Profile.Name = &quot;System Administrator&quot;),
+NOT($Profile.Name =&quot;STADD Coordinator&quot;), 
+NOT($Profile.Name =&quot;STADD Project Administrator&quot;),
+NOT($Profile.Name =&quot;STADD Director&quot;),
+NOT($Permission.Validation_Rule_Bypass))</errorConditionFormula>
+        <errorDisplayField>OwnerId</errorDisplayField>
+        <errorMessage>You cannot reassign the owner.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Owner_cannot_be_a_Coordinator</fullName>
+        <active>true</active>
+        <description>**丄冟샧핷쯔 跀胲蜵줇듙鞷靭齶脀 粩骓彆닌寴縍袴텾耀 榥獵볎吜냃눁쩁솖병 媑屠癭檙葨ꐛ봥主닑 幐싅狃꿚뿭倲蔳蹨鬀 苻膃炌緄饩怞떦橴鰀 蚔痘鎉雷폽囩퓱놷쯑 喩湧顎들쑷萃럲쓢阀 嘶檣麂訷闹솠데硏退 涘왎葧圣꽁暸鬉딛夀 峉촐糰볱鄯嫣뒻蹎뿑 戩滂嘏跐瘋鞁삘퓵圀 耛妰탗赬켿츟냨菄樀&amp;\䷀\ 一䷀巀䷈52008!</description>
+        <errorConditionFormula>Owner:User.Profile.Name=&quot;STADD Coordinator&quot;</errorConditionFormula>
+        <errorMessage>The Case Owner cannot be a Coordinator</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Primary_contact_check</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Is_primary_contact__c, NOT(ISBLANK( Primary_Referral_Contact__c)))</errorConditionFormula>
+        <errorDisplayField>Primary_Contact__c</errorDisplayField>
+        <errorMessage>You&apos;ve indicated that the individual is a primary contact</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Functional_Domain_report</fullName>
+        <availability>online</availability>
+        <description>Functional Domain Report</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Print Functional Domain Summary</masterLabel>
+        <openType>newWindow</openType>
+        <page>FunctionalDomainType</page>
+        <position>fullScreen</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

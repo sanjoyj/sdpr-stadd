@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area(s) Impacted --></label>
+        <name>Area_Impacted__c</name>
+        <picklistValues>
+            <masterLabel>Data Quality Implications</masterLabel>
+            <translation><!-- Data Quality Implications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Usable - May Require Additional &quot;Clicks&quot;</masterLabel>
+            <translation><!-- System Usable - May Require Additional &quot;Clicks&quot; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Usable - May Require External Solutions(e.g. Excel)</masterLabel>
+            <translation><!-- System Usable - May Require External Solutions(e.g. Excel) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Usable - May Require Manual Maintenance Procedures</masterLabel>
+            <translation><!-- System Usable - May Require Manual Maintenance Procedures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System cannot be used by impacted teams</masterLabel>
+            <translation><!-- System cannot be used by impacted teams --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Adoption and Org Readiness</masterLabel>
+            <translation><!-- Adoption and Org Readiness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complexity --></label>
+        <name>Complexity__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Data Governance Escalation Required? --></label>
+        <name>Data_Governance_Escalation_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submitted --></label>
+        <name>Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Description --></label>
+        <name>Detailed_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalate To --></label>
+        <name>Escalate_To__c</name>
+        <relationshipLabel><!-- Project Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated LOE(Hours) --></label>
+        <name>Estimated_LOE_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Resolution --></label>
+        <name>Final_Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impact Description --></label>
+        <name>Impact_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leadership Escalation Required? --></label>
+        <name>Leadership_Escalation_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level of Impact --></label>
+        <name>Level_of_Impact__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Meeting or Source in which the Project Item was raised --></help>
+        <label><!-- Meeting/Source --></label>
+        <name>Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMO Escalation Required --></label>
+        <name>PMO_Escalation_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Completed --></label>
+        <name>Percentage_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Requirement --></label>
+        <name>Related_Requirement__c</name>
+        <relationshipLabel><!-- Project Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Release --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Project Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resolution Options --></label>
+        <name>Resolution_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Action --></label>
+        <name>Risk_Action__c</name>
+        <picklistValues>
+            <masterLabel>Accept</masterLabel>
+            <translation><!-- Accept --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Avoidance</masterLabel>
+            <translation><!-- Avoidance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mitigate</masterLabel>
+            <translation><!-- Mitigate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Probability --></label>
+        <name>Risk_Probability__c</name>
+        <picklistValues>
+            <masterLabel>10%</masterLabel>
+            <translation><!-- 10% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90%</masterLabel>
+            <translation><!-- 90% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter names of additional owners --></help>
+        <label><!-- Secondary Owner(s) --></label>
+        <name>Secondary_Owner_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution Governance Escalation Required? --></label>
+        <name>Solution_Governance_Escalation_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Update --></label>
+        <name>Status_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Category --></label>
+        <name>Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>Adoption</masterLabel>
+            <translation><!-- Adoption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Design</masterLabel>
+            <translation><!-- Application Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budget</masterLabel>
+            <translation><!-- Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Cleansing</masterLabel>
+            <translation><!-- Data Cleansing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Migration</masterLabel>
+            <translation><!-- Data Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration</masterLabel>
+            <translation><!-- Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process</masterLabel>
+            <translation><!-- Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requirements</masterLabel>
+            <translation><!-- Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resources</masterLabel>
+            <translation><!-- Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timeline</masterLabel>
+            <translation><!-- Timeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Person or Team who logged the Project Item --></help>
+        <label><!-- Submitted By --></label>
+        <name>Submitted_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Work Package --></label>
+        <name>Work_Package__c</name>
+        <relationshipLabel><!-- Project Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the number of users impacted or a group size --></help>
+        <label><!-- # of Users Impacted --></label>
+        <name>of_Users_impacted__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Action Item --></label>
+        <name>Action_Item</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Decision --></label>
+        <name>Decision</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Issue --></label>
+        <name>Issue</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Risk --></label>
+        <name>Risk</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Final Resolution is required when the status is set to Resolved --></errorMessage>
+        <name>Final_Resolution_reqd_for_Resolved_Item</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Project Item cannot be edited as it is in a terminal status --></errorMessage>
+        <name>Record_Lock_Down</name>
+    </validationRules>
+</CustomObjectTranslation>

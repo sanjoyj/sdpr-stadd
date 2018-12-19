@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contribution</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contributions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Item --></label>
+        <name>Action_Item_Number__c</name>
+        <relationshipLabel><!-- Contributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>Action__c</name>
+        <picklistValues>
+            <masterLabel>Create</masterLabel>
+            <translation><!-- Create --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Contributions History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contributed By --></label>
+        <name>Contributed_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contribution Type --></label>
+        <name>Contribution_Type__c</name>
+        <picklistValues>
+            <masterLabel>Action Item</masterLabel>
+            <translation><!-- Action Item --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAP - Functional Domain Summaries</masterLabel>
+            <translation><!-- CAP - Functional Domain Summaries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Alert</masterLabel>
+            <translation><!-- Case Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Contact</masterLabel>
+            <translation><!-- Case Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Document</masterLabel>
+            <translation><!-- Case Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Note</masterLabel>
+            <translation><!-- Case Note --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Functional Domain Update</masterLabel>
+            <translation><!-- Functional Domain Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goals</masterLabel>
+            <translation><!-- Goals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List of Assessments</masterLabel>
+            <translation><!-- List of Assessments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milestone</masterLabel>
+            <translation><!-- Milestone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protocols and Safeguards</masterLabel>
+            <translation><!-- Protocols and Safeguards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplies and Equipment</masterLabel>
+            <translation><!-- Supplies and Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supports and Services</masterLabel>
+            <translation><!-- Supports and Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Created date --></label>
+        <name>Created_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Name --></label>
+        <name>Individual_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Organization field on Contact object
+(associated with Created by User) --></help>
+        <label><!-- Organization --></label>
+        <name>Organization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restricted Indicator --></label>
+        <name>Restricted_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Profile field on User object
+(associated with Created by User) --></help>
+        <label><!-- User Profile --></label>
+        <name>User_Profile__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>CaseContactTabOverride</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>CaseContactSharingPage</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contact details of the  Individual referred in STADD Program.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>Referral_Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact_Person_First_Name__c &amp; &quot; &quot; &amp; Contact_Person_Last_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Cell_Phone_Number__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Cell Phone</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Email_Address__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_First_Name__c</fullName>
+        <description>The last name of the person to contact about the case</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Home_Phone_Extension__c</fullName>
+        <description>Phone number extension if required</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone number extension if required</inlineHelpText>
+        <label>Home Phone Extension</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Home_Phone_Number__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>You need to enter at least one phone number</inlineHelpText>
+        <label>Home Phone</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Last_Name__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Profession_Role__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Profession / Role</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Work_Phone_Extension__c</fullName>
+        <description>Case contact&apos;s work phone extension</description>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Work Phone extension (if required)</inlineHelpText>
+        <label>Work Phone Extension</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Person_Work_Phone_Number__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Work Phone</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Subtype__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose only if Contact Type is &quot;Organizational&quot;</inlineHelpText>
+        <label>Contact Subtype</label>
+        <picklist>
+            <controllingField>Contact_Type__c</controllingField>
+            <picklistValues>
+                <fullName>CFD</fullName>
+                <default>false</default>
+                <controllingFieldValues>Organizational</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>School</fullName>
+                <default>false</default>
+                <controllingFieldValues>Organizational</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLBC</fullName>
+                <default>false</default>
+                <controllingFieldValues>Organizational</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health Authority</fullName>
+                <default>false</default>
+                <controllingFieldValues>Organizational</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alternative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Organizational</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Case Contacts</relationshipLabel>
+        <relationshipName>Case_Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_note__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Contact note</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Inactive_Date__c</fullName>
+        <description>Date of when the contact became inactive</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of when the contact became inactive</inlineHelpText>
+        <label>Inactive Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked if a contact is inactive</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked if a contact is inactive</inlineHelpText>
+        <label>Inactive</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mailing_Address_City__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Mailing Address City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Address_Line1__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Mailing Address Line1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Address_Line2__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Mailing Address Line2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Address_Postal_Code__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Mailing Address Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mailing_Address_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Mailing Address Province</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BC</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Organization_Name__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Regional Office</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Relationship__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Only required if Relationship above = “Other ”</inlineHelpText>
+        <label>Relationship to Individual (if other)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_Invite_Date__c</fullName>
+        <description>Portal Invite Date</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Portal Invite Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Portal_Invite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Portal Invite</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this field if you want an email to be sent to the case contact with instruction to register to the application (i.e. if they are not portal users already).</inlineHelpText>
+        <label>Portal Invite</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryContact__c</fullName>
+        <externalId>false</externalId>
+        <formula>Referral__r.Primary_Contact_Is_Individual_Indicator__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PrimaryContact</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Professional_Identifying_Number__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Professional Identifying Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referral__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referral</label>
+        <referenceTo>Referral__c</referenceTo>
+        <relationshipLabel>Case Contacts</relationshipLabel>
+        <relationshipName>Referral_Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_Subtype__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship to Individual</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Committee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Representative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Family</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Foster Parent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Friend</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Group Home</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Network</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nurse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Physician</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Parent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resource Teacher</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Self-Advocate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Worker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Teacher</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Therapist</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CLBC (Community Living BC) Worker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DAA (Delegated Aboriginal Agency)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CFD (Children and Family Development)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Support_Team_Member__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>An indicator that marks if the Case Contact is a Support Team Member.</description>
+        <externalId>false</externalId>
+        <label>Support Team Member</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Case Contact</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CON-{000000}</displayFormat>
+        <label>Case Contact Id</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Case Contacts</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Contact_Person_First_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Person_Last_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Relationship_Subtype__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Other_Relationship__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Case__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Full_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Person_Home_Phone_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Person_Cell_Phone_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Person_Work_Phone_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Person_Email_Address__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Check_only_when_email_present</fullName>
+        <active>true</active>
+        <description>Check only when email present</description>
+        <errorConditionFormula>AND( Portal_Invite__c ,(IF((Contact_Person_Email_Address__c == null), TRUE , false)))</errorConditionFormula>
+        <errorDisplayField>Portal_Invite__c</errorDisplayField>
+        <errorMessage>Checkbox can only be checked if Email Address exists already</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Phone_number_formatting</fullName>
+        <active>false</active>
+        <description>Phone number formatting</description>
+        <errorConditionFormula>NOT(REGEX( Contact_Person_Home_Phone_Number__c, &quot;\\D*?(\\d\\D*?){10}&quot;))</errorConditionFormula>
+        <errorDisplayField>Contact_Person_Home_Phone_Number__c</errorDisplayField>
+        <errorMessage>Please enter a valid phone number</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Relationship_Type_Other</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISBLANK(Other_Relationship__c) , ISPICKVAL( Relationship_Subtype__c , &apos;Other&apos;))</errorConditionFormula>
+        <errorDisplayField>Other_Relationship__c</errorDisplayField>
+        <errorMessage>Please specify the Other Relationship</errorMessage>
+    </validationRules>
+</CustomObject>

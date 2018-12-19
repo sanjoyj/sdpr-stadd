@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referrals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age at Referral --></label>
+        <name>Age_at_Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Form Id --></label>
+        <name>Assessment_Form_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- filled out by the system (blank until a case is created) --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Community --></label>
+        <name>Community__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conscent Form Id --></label>
+        <name>Conscent_Form_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Age --></label>
+        <name>Current_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current School --></label>
+        <name>Current_School__c</name>
+    </fields>
+    <fields>
+        <label><!-- DAA or other cultural or spiritual repre --></label>
+        <name>DAA_or_other_cultural_or_spiritual_repre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>EIS_Location__c</name>
+        <picklistValues>
+            <masterLabel>Abbotsford</masterLabel>
+            <translation><!-- Abbotsford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulkley / Stikine</masterLabel>
+            <translation><!-- Bulkley / Stikine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnaby</masterLabel>
+            <translation><!-- Burnaby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campbell River</masterLabel>
+            <translation><!-- Campbell River --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cariboo</masterLabel>
+            <translation><!-- Cariboo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chilliwack</masterLabel>
+            <translation><!-- Chilliwack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City Centre</masterLabel>
+            <translation><!-- City Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comox Valley</masterLabel>
+            <translation><!-- Comox Valley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delta</masterLabel>
+            <translation><!-- Delta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downtown Eastside</masterLabel>
+            <translation><!-- Downtown Eastside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Kootenay</masterLabel>
+            <translation><!-- East Kootenay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraser / Cascades</masterLabel>
+            <translation><!-- Fraser / Cascades --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold Trail</masterLabel>
+            <translation><!-- Gold Trail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Haida Gwaii / Prince Rupert</masterLabel>
+            <translation><!-- Haida Gwaii / Prince Rupert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kamloops</masterLabel>
+            <translation><!-- Kamloops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Langley</masterLabel>
+            <translation><!-- Langley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mission</masterLabel>
+            <translation><!-- Mission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nanaimo</masterLabel>
+            <translation><!-- Nanaimo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nechako Lakes</masterLabel>
+            <translation><!-- Nechako Lakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Westminster</masterLabel>
+            <translation><!-- New Westminster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parksville / Qualicum</masterLabel>
+            <translation><!-- Parksville / Qualicum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peace North</masterLabel>
+            <translation><!-- Peace North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prince George</masterLabel>
+            <translation><!-- Prince George --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quesnel</masterLabel>
+            <translation><!-- Quesnel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ridge Meadows</masterLabel>
+            <translation><!-- Ridge Meadows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Okanagan</masterLabel>
+            <translation><!-- South Okanagan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey East</masterLabel>
+            <translation><!-- Surrey East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey North</masterLabel>
+            <translation><!-- Surrey North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surrey South</masterLabel>
+            <translation><!-- Surrey South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tri-Cities</masterLabel>
+            <translation><!-- Tri-Cities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>EIS_Region__c</name>
+        <picklistValues>
+            <masterLabel>Fraser Region</masterLabel>
+            <translation><!-- Fraser Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Region</masterLabel>
+            <translation><!-- Interior Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Region</masterLabel>
+            <translation><!-- Northern Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vancouver Coastal Region</masterLabel>
+            <translation><!-- Vancouver Coastal Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vancouver Island Region</masterLabel>
+            <translation><!-- Vancouver Island Region --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Type --></label>
+        <name>Eligibility_Type__c</name>
+        <picklistValues>
+            <masterLabel>DD</masterLabel>
+            <translation><!-- DD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSI ASD/PDD</masterLabel>
+            <translation><!-- PSI ASD/PDD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSI FASD</masterLabel>
+            <translation><!-- PSI FASD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing Protocols/Safeguards --></label>
+        <name>Existing_Protocols_Safeguards__c</name>
+    </fields>
+    <fields>
+        <help><!-- Individual/youth was directly referred through a Foundry service hub location. --></help>
+        <label><!-- Foundry BC Referral --></label>
+        <name>Foundry_BC_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Representative, Guardian, or Committee&quot; --></help>
+        <label><!-- Has legal authority --></label>
+        <name>Has_legal_authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Cell Phone Number --></label>
+        <name>Individual_Cell_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose in order: day/month/year to complete; any other order will not be accepted by the system --></help>
+        <label><!-- Individual Date of Birth --></label>
+        <name>Individual_Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Email Address --></label>
+        <name>Individual_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual First Name --></label>
+        <name>Individual_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Gender --></label>
+        <name>Individual_Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Disclosed</masterLabel>
+            <translation><!-- Not Disclosed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- You need to enter at least one phone number --></help>
+        <label><!-- Individual Home Phone Number --></label>
+        <name>Individual_Home_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Last Name --></label>
+        <name>Individual_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Middle Name --></label>
+        <name>Individual_Middle_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Name --></label>
+        <name>Individual_Name_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Preferred Name --></label>
+        <name>Individual_Preferred_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Work Phone Number Extension --></label>
+        <name>Individual_Work_Phone_Number_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Work Phone Number --></label>
+        <name>Individual_Work_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- filled out by the system (blank until a case is created) --></help>
+        <label><!-- Individual Referred --></label>
+        <name>Individual__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- check the box to enter and save contact information for this organization --></help>
+        <label><!-- Is the Individual Attending School ? --></label>
+        <name>Is_the_Individual_Attending_School_Indic__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check the box to enter and save contact information for this organization --></help>
+        <label><!-- Is the Individual eligible for CLBC Serv --></label>
+        <name>Is_the_Individual_eligible_for_CLBC_Serv__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check the box to enter and save contact information for this organization --></help>
+        <label><!-- Is the individual supported by CFD CYSN --></label>
+        <name>Is_the_individual_being_supported_by_CFD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language in the Home --></label>
+        <name>Language_in_the_Home__c</name>
+        <picklistValues>
+            <masterLabel>Cantonese</masterLabel>
+            <translation><!-- Cantonese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese, n.o.s.</masterLabel>
+            <translation><!-- Chinese, n.o.s. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mandarin</masterLabel>
+            <translation><!-- Mandarin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Persian (Farsi)</masterLabel>
+            <translation><!-- Persian (Farsi) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punjabi</masterLabel>
+            <translation><!-- Punjabi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tagalog</masterLabel>
+            <translation><!-- Tagalog --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address City --></label>
+        <name>Mailing_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Line 1 --></label>
+        <name>Mailing_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Line 2 --></label>
+        <name>Mailing_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Postal Code --></label>
+        <name>Mailing_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Province --></label>
+        <name>Mailing_Address_Province__c</name>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- if not checked, need to enter the mailing address --></help>
+        <label><!-- Mailing Address same as Physical Address --></label>
+        <name>Mailing_Address_same_as_Physical_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Agencies Involved --></label>
+        <name>Other_Agencies_Involved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Language --></label>
+        <name>Other_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address City --></label>
+        <name>Physical_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address Line 1 --></label>
+        <name>Physical_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address Line 2 --></label>
+        <name>Physical_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address Postal Code --></label>
+        <name>Physical_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address Province --></label>
+        <name>Physical_Address_Province__c</name>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Cannot be checked if Individual has a legal authority --></help>
+        <label><!-- Individual is Primary Contact --></label>
+        <name>Primary_Contact_Is_Individual_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Is Individual --></label>
+        <name>Primary_Contact_Is_Individual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receiving CLBC Services on Reserve --></label>
+        <name>Receiving_Services_on_Reserve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Notes --></label>
+        <name>Referral_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Origin --></label>
+        <name>Referral_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referring Organization --></label>
+        <name>Referring_Organization__c</name>
+        <picklistValues>
+            <masterLabel>CFD (Children and Family Development)</masterLabel>
+            <translation><!-- CFD (Children and Family Development) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLBC (Community Living BC)</masterLabel>
+            <translation><!-- CLBC (Community Living BC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAA (Delegated Aboriginal Agency)</masterLabel>
+            <translation><!-- DAA (Delegated Aboriginal Agency) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Authority</masterLabel>
+            <translation><!-- Health Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School</masterLabel>
+            <translation><!-- School --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special considerations --></label>
+        <name>Special_limitations_hearing_sight_mob__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Case Created</masterLabel>
+            <translation><!-- Case Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Stage --></label>
+        <name>Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Acceptance in Progress</masterLabel>
+            <translation><!-- Acceptance in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Converted to Case</masterLabel>
+            <translation><!-- Converted to Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deceased</masterLabel>
+            <translation><!-- Deceased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete Documents</masterLabel>
+            <translation><!-- Incomplete Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Doesn&apos;t Qualify - Other</masterLabel>
+            <translation><!-- Individual Doesn&apos;t Qualify - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Doesn&apos;t Qualify - Outside of Service Area (Location)</masterLabel>
+            <translation><!-- Individual Doesn&apos;t Qualify - Outside of Service Area (Location) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Doesn’t Qualify - Eligibility Type</masterLabel>
+            <translation><!-- Individual Doesn’t Qualify - Eligibility Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Doesn’t Qualify - Outside of Program Age Parameters</masterLabel>
+            <translation><!-- Individual Doesn’t Qualify - Outside of Program Age Parameters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-Out</masterLabel>
+            <translation><!-- Opt-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Assignment</masterLabel>
+            <translation><!-- Waiting for Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Information</masterLabel>
+            <translation><!-- Waiting for Information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Referral --></label>
+        <name>Type_of_Referral__c</name>
+        <picklistValues>
+            <masterLabel>Organizational Referral</masterLabel>
+            <translation><!-- Organizational Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self / Direct Referral</masterLabel>
+            <translation><!-- Self / Direct Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supported Referral</masterLabel>
+            <translation><!-- Supported Referral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What services they are waiting for --></label>
+        <name>What_services_they_are_waiting_for__c</name>
+    </fields>
+    <fields>
+        <label><!-- case ID --></label>
+        <name>case_ID__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Partner --></label>
+        <name>Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Read-Only --></label>
+        <name>Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Self Sharing --></label>
+        <name>Self_Sharing</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter at least one phone number for the individual since they are the primary contact --></errorMessage>
+        <name>At_least_one_number_for_Primary_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- if the Individual has legal authority then cannot be the primary contact --></errorMessage>
+        <name>Legal_authority_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure that the full mailing address is entered if different from the physical address --></errorMessage>
+        <name>Mailing_address_conditionally_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot reassign the owner. --></errorMessage>
+        <name>Navigator_reassign_owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Postal Code in the format: A1A1A1 or A1A 1A1, where A is a letter and 1 is a digit. --></errorMessage>
+        <name>Postal_Code_Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Accept_Case --></label>
+        <name>Accept_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Match_Community --></label>
+        <name>Match_Community</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Referral --></label>
+        <name>New_Referral</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject_Case --></label>
+        <name>Reject_Case</name>
+    </webLinks>
+</CustomObjectTranslation>

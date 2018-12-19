@@ -1,0 +1,99 @@
+<apex:page Standardcontroller="Case_Document__c" extensions="CreateCaseDocAttachController" tabStyle="Case_Document__c" id="thepage">
+
+         <!-- Include jQuery resource -->
+<apex:includeScript value="{!URLFOR($Resource.jquery)}"/>
+<style type="text/css">
+.myClass1 label { 
+    color: red; 
+}
+
+.myClass2 label{ 
+    color: green; 
+}
+</style>
+<!--  
+  <script type="text/javascript">
+         var j$ = jQuery.noConflict();
+      
+        j$(document).ready(function(){
+            
+            /* This function validates if the name of the file selected in the CONSENT FORM file selector contains 
+             * last name of the individual.
+             */
+            j$('[id$=file]').on("change",function() {
+                  var file = j$("[id $='file']");
+                  var arrFilePath = file.val().split("\\");
+                  var doc;
+                  var docName;
+                  doc = arrFilePath[arrFilePath.length - 1];
+                  //alert(docName);
+                    doc = doc.toUpperCase();
+                    doc = doc.split(".");
+                    //alert(doc);
+                    docName = doc[doc.length - 2];
+
+                    var rlastName= "{!refname}";
+                    var rfirstName= "{!refFirstName}";
+                    rlastName= rlastName.toUpperCase();
+                    rfirstName=rfirstName.toUpperCase();
+                    //alert(rlastName);              
+                    if(rlastName != '' ){
+
+                      if(docName.indexOf(rlastName) != -1 || docName.indexOf(rfirstName) != -1){
+                          alert("Please rename your file. It is important not to include personal information in the file name.");                    
+                          //remove the selected file
+                          file.val('');
+                         }
+                                
+                     }                  
+                    var clastName="{!casindiname}";
+                    var cfirstName = "{!casfirstname}";                                         
+                    clastName =clastName.toUpperCase();
+                    cfirstName= cfirstName.toUpperCase();
+                    //alert(clastName);                 
+                     if(clastName != ''){
+        
+                      if(docName.indexOf(clastName) != -1 || docName.indexOf(cfirstName) != -1 ){
+                          alert("Please rename your file. It is important not to include personal information in the file name.");                    
+                          //remove the selected file
+                          file.val('');
+                      }
+                  } 
+            });
+          
+        });
+        
+  </script>  
+-->
+<apex:form id="theForm">
+    <apex:pageBlock id="thePageBlock" title="Case Document">
+    <apex:pageMessages />
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!cancel}" value="Cancel"/>
+              <apex:commandButton action="{!Submit}"  value="Submit" />       
+          </apex:pageBlockButtons>  
+          
+          <apex:pageBlockSection title="Case Document Information" id="Csdoc" >
+              <apex:inputField value="{!casdoc.Name}" required="true" onkeydown="if(event.keyCode==13){this.blur();actionFunction();}" taborderhint="1" />
+              <apex:inputField id="dockey" value="{!casdoc.Document_Key_Words__c}" onkeydown="if(event.keyCode==13){this.blur();actionFunction();}" taborderhint="4"/>
+              <apex:inputField id="category" value="{!casdoc.Category__c}" required="true" onkeydown="if(event.keyCode==13){this.blur();actionFunction();}" taborderhint="2" /> 
+              <apex:pageBlockSectionItem ></apex:pageBlockSectionItem>
+              <apex:inputField id="subcat" value="{!casdoc.Sub_Category__c}" required="true" onkeydown="if(event.keyCode==13){this.blur();actionFunction();}" taborderhint="3"/>
+              <apex:pageBlockSectionItem ></apex:pageBlockSectionItem> 
+              <apex:inputField id="Desc" value="{!casdoc.Description__c}" required="true" onkeydown="if(event.keyCode==13){this.blur();actionFunction();}" taborderhint="5"/>
+                        
+              
+              <!-- <apex:inputField id="dock" value="{!casdoc.RecordTypeId}" >  -->
+          </apex:pageBlockSection>
+          
+         
+         <!--  <apex:pageBlockSection title="Attachment  (Please ensure that filename does not contain Personally Identifiable Information (PII) such as Names, Birthdates and Locations) " id="att" >
+          
+              <apex:outputLabel value="Attachment" for="Form1"/>
+              <apex:pageBlockSectionItem ></apex:pageBlockSectionItem>
+              <apex:inputFile value="{!vDocument.body}" filename="{!vDocument.name}" id="file" /> 
+          </apex:pageBlockSection> -->
+         
+    </apex:pageBlock>         
+</apex:form>
+</apex:page>

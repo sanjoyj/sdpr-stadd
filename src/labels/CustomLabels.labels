@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Accept_Case_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accept Case 1</shortDescription>
+        <value>Must attach consent and assessment forms before creating a case, please return to previous page by clicking on cancel</value>
+    </labels>
+    <labels>
+        <fullName>AnErrorHasOcurred</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AnErrorHasOcurred</shortDescription>
+        <value>An error has ocurred:</value>
+    </labels>
+    <labels>
+        <fullName>Back</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>CaseId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseId</shortDescription>
+        <value>500</value>
+    </labels>
+    <labels>
+        <fullName>CaseNewButtonMessage</fullName>
+        <categories>Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseNewButtonMessage</shortDescription>
+        <value>You must create a new referral  or accept an existing referral in order for a new case to be created</value>
+    </labels>
+    <labels>
+        <fullName>Case_Doc_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case_Doc_Id</shortDescription>
+        <value>a0i</value>
+    </labels>
+    <labels>
+        <fullName>Case_Lkid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case_Lkid</shortDescription>
+        <value>CF00Ni000000BeUd0_lkid</value>
+    </labels>
+    <labels>
+        <fullName>Create_Functional_Domain_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Functional Domain 1</shortDescription>
+        <value>Please complete the assessment details</value>
+    </labels>
+    <labels>
+        <fullName>Create_Functional_Domain_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Functional Domain 2</shortDescription>
+        <value>You do not have a helptext</value>
+    </labels>
+    <labels>
+        <fullName>Create_Functional_Domain_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Functional Domain 3</shortDescription>
+        <value>Please contact the administrator</value>
+    </labels>
+    <labels>
+        <fullName>Error_on_Functional_Update_Report1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error on Functional Update Report</shortDescription>
+        <value>No Functional Domain with this Type available in the system.</value>
+    </labels>
+    <labels>
+        <fullName>FullView</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FullView</shortDescription>
+        <value>[Full View]</value>
+    </labels>
+    <labels>
+        <fullName>Plan_Goal_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Plan Goal Id</shortDescription>
+        <value>CF00Nf0000000PzYJ</value>
+    </labels>
+    <labels>
+        <fullName>Protocol_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Protocol Id</shortDescription>
+        <value>a0r</value>
+    </labels>
+    <labels>
+        <fullName>ReferralId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReferralId</shortDescription>
+        <value>a0s</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Doc_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Doc 1</shortDescription>
+        <value>Please choose the file before uploading</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Doc_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Doc 2</shortDescription>
+        <value>Please attach the documents</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Doc_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Doc 3</shortDescription>
+        <value>Please choose the file before uploading</value>
+    </labels>
+    <labels>
+        <fullName>Upload_Doc_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Doc 4</shortDescription>
+        <value>Please contact the administrator</value>
+    </labels>
+</CustomLabels>

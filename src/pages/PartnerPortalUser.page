@@ -1,0 +1,41 @@
+<apex:page sidebar="false" showheader="false" controller="PartnerPortalUserController">
+    
+    <apex:form id="formId" >
+        <apex:pageMessages />
+        <apex:pageBlock id="pageBlockId" title="Creating Partner Portal User">
+            <apex:outputPanel >     
+            </apex:outputPanel>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!createPortaluser}" status="ImgStatus" value="Create User" rerender="formId" />
+                <apex:commandButton rerender="pageBlockId" action="{!reset}" value="Cancel" />
+            </apex:pageBlockButtons>
+            
+            <apex:actionStatus id="ImgStatus">
+                <apex:facet name="start">
+                    <apex:outputPanel >
+                        <apex:image value="/img/loading32.gif" style="height: 25px;"/>
+                    </apex:outputPanel>
+                </apex:facet>
+            </apex:actionStatus>
+        
+            <apex:pageBlockSection title="Enter User Details" columns="1">
+              <div>
+                <apex:pageBlockSectionItem >
+                <apex:outputLabel for="profileList" value="Select the Portal Profile to assign new User"/>
+                    <apex:selectList value="{!sSelectedProfileId}" multiselect="false" size="1" id="profileList">
+                            <apex:selectOptions value="{!customerPortalProfiles}"/>
+                        </apex:selectList>
+                </apex:pageBlockSectionItem>                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Username (must be in form of email address, @xxxxx.com)" for="uUsername" />
+                    <apex:inputField value="{!u.username}" id="uUsername">
+                     <img src="/s.gif" alt="Help" class="helpIcon" title="Ensure no personal information is shown in the username, keep the name generic"/>
+                    </apex:inputField>
+                </apex:pageBlockSectionItem>
+               </div>
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

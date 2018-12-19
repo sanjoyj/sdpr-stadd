@@ -1,0 +1,6 @@
+<apex:page Standardcontroller="Case_Contact__c" extensions="CaseContactSharingController" tabStyle="Case_Contact__c" id="thepage">
+
+	<apex:pageMessages />
+	<apex:detail subject="{!id}" rendered="{!rend}"/>
+
+</apex:page>

@@ -1,0 +1,81 @@
+<apex:page id="communitiesSelfRegPage" showHeader="true" controller="CommunitiesSelfRegController" title="{!$Label.site.user_registration}">
+    <apex:define name="body">  
+        <center>
+            <apex:form id="theForm" forceSSL="true">
+                <apex:outputPanel style="font-size: 1.5em; font-weight: bold; margin: 0.25em 0.5em">
+                    STADD Portal Registration
+                </apex:outputPanel>
+                <br/>
+                <apex:outputPanel style="font-size: 1.0em;">
+		            	<apex:outputText escape="false" value="{!mapobj.Context_prompt__c}"/>
+		        </apex:outputPanel>  
+		        
+                <apex:pageMessages id="error"/>
+                <apex:panelGrid columns="4" style="margin-top:1em;">
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.First_Name__c.Label}" for="RfirstName"/>
+                      <apex:inputField id="RfirstName" required="true" value="{!request.First_Name__c}"/>
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Middle_Name_Initial__c.Label}" for="Rmidname"/>
+                  <apex:inputText id="Rmidname" value="{!request.Middle_Name_Initial__c}"/>
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Last_Name__c.Label}" for="RlastName"/>
+                  <apex:inputField id="RlastName" required="true" value="{!request.Last_Name__c}"/>
+                  <!-- <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Case_Verification_Code__c.Label}" for="code"/>
+                      <apex:inputText required="true" id="code" value="{!request.Case_Verification_Code__c}"/>  removed as part of defect 267-->
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Email__c.Label}" for="Remail"/>
+                      <apex:inputField id="Remail" required="true" value="{!request.Email__c}"/>
+                    
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Contact_Phone_Number__c.Label}" for="Rphone"/>
+                  <apex:inputField required="true" id="Rphone" value="{!request.Contact_Phone_Number__c}"/>
+                  
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Mailing_Address_Line1__c.Label}" for="add1"/>
+                  <apex:inputText id="add1" value="{!request.Mailing_Address_Line1__c}"/>  
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Mailing_Address_Line2__c.Label}" for="add2"/>
+                  <apex:inputText id="padd2" value="{!request.Mailing_Address_Line2__c}"/>
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Mailing_Address_City__c.Label}" for="city"/>
+                  <apex:inputText id="city" value="{!request.Mailing_Address_City__c}"/>
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Mailing_Address_Postal_Code__c.Label}" for="post"/>
+                  <apex:inputText id="post" value="{!request.Mailing_Address_Postal_Code__c}"/>
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.On_Behalf_Of__c.Label}" for="onbehalf"/>
+                  <apex:inputText id="onbehalf" value="{!request.On_Behalf_Of__c}"/>
+                  
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.User_Credentials_OR_Role_Profession__c.Label}" for="Rrelation"/>
+                      <apex:inputField id="Rrelation" required="true" value="{!request.User_Credentials_OR_Role_Profession__c}"/>
+                  
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Professional_Identifying_Number__c.Label}" for="prof"/>
+                  <apex:inputText id="prof" value="{!request.Professional_Identifying_Number__c}"/>
+                  
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Relationship_to_Individual_if_Other__c.Label}" for="RrelationDetail"/>
+                  <apex:inputField id="RrelationDetail" value="{!request.Relationship_to_Individual_if_Other__c}"/>
+                  
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.EIS_Region__c.Label}" for="p"/>
+                  <apex:inputField id="p" value="{!request.EIS_Region__c}"/>
+                  </apex:panelGrid>
+                  <apex:panelGrid columns="4" >
+                  <apex:outputLabel value="{!$ObjectType.System_Access_Request__c.Fields.Reason_for_Solution_Access__c.Label}" for="sol"/>
+                  <apex:inputField required="true" value="{!request.Reason_for_Solution_Access__c}"  styleClass="myClass"/>
+                  
+                </apex:panelGrid> 
+                <br/>
+                <apex:commandButton action="{!submitRequest}" value="Submit Request" id="submit"/>
+            </apex:form>
+        </center>
+        <br/>
+        <style>
+            .requiredInput {
+                position: relative;
+                height: 100%;
+            }
+            .requiredInput .requiredBlock {
+                background-color: #c00;
+                position: absolute;
+                left: -4px;
+                width: 3px;
+                top: 1px;
+                bottom: 1px;
+    
+            }
+             .myClass { width: 550px;
+             	left: -4px;  
+        		}
+        </style>
+    </apex:define>
+</apex:page>

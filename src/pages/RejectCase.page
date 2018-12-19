@@ -1,0 +1,28 @@
+<apex:page standardController="Referral__c" extensions="RejectCaseController"> 
+<apex:form >
+ 
+ <apex:pageBlock >
+    <apex:pageMessages />
+      Do you really want to reject this referral ?
+      Please specify the reason for the rejection.
+
+      <apex:pageBlockSection columns="2">
+      <apex:inputField label="" value="{!record.Status__c}" style="display:none;visibility:hidden"/>
+      <apex:pageBlockSectionItem />
+       <!--  <apex:outputField label="status" value="{!record.Status__c}" />  -->
+      <div align="center">
+      Status : Rejected 
+      </div>
+      <apex:inputField label="Reason for Rejection" value="{!record.Sub_Status__c}" required="true"/>
+      </apex:pageBlockSection>
+      
+ </apex:pageBlock>    
+  
+  
+  <apex:pageBlock >
+  <apex:commandButton action="{!cancel}" value="Cancel" /> 
+ <apex:commandButton action="{!RejectCase}" value="Reject Case" /> 
+  </apex:pageBlock>
+</apex:form>
+
+</apex:page>

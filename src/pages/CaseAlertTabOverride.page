@@ -1,0 +1,4 @@
+<apex:page showHeader="true" tabstyle="Case_Alert__c">
+<apex:sectionheader title="Case Alerts" subtitle="Home"></apex:sectionheader>
+    <apex:ListViews type="Case_Alert__c" />
+</apex:page>
