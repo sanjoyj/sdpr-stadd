@@ -1,6 +1,0 @@
-The following {!Project_Item__c.RecordType} has been escalated to you.
-
-Summary: {!Project_Item__c.Summary__c}
-
-Please see the following link for complete details:
-{!Project_Item__c.Link}
