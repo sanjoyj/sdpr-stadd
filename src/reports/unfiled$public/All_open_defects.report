@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_27997052</developerName>
+        <masterLabel>Status group</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Defect__c.Defect_Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>6. Pending decision</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1. Submitted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2. In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>2.b Need More Info</sourceValue>
+            </sourceValues>
+            <value>Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>3. Fixed in Config</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4a. Ready to Retest in SIT</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4b. Ready to Retest in UAT</sourceValue>
+            </sourceValues>
+            <value>Fixed/in Testing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>5e. Closed - Accept Rejected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5a. Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>4c. Deferred</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5c. Rejected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5d. Duplicate</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>5b. Converted to Change Request</sourceValue>
+            </sourceValues>
+            <value>Closed (all)</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Defect__c.Summary__c</field>
+    </columns>
+    <columns>
+        <field>Defect__c.Complexity__c</field>
+    </columns>
+    <columns>
+        <field>Defect__c.Assigned_to__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Defect__c.Status_Update__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>BucketField_27997052</column>
+            <operator>equals</operator>
+            <value>Open</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Defect__c.Area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Defect__c.Enhancement__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Defect__c.Severity__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All open defects</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Defect__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Defect__c.Actual_Closed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

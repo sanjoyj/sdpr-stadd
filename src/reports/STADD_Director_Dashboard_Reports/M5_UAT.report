@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_59584713</developerName>
+        <masterLabel>Age Groups</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Referral__c$Age_at_Referral__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>14</to>
+            </sourceValues>
+            <value>Youth (&lt;15)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>14</from>
+                <to>17</to>
+            </sourceValues>
+            <value>Youth (15-17)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>17</from>
+                <to>18</to>
+            </sourceValues>
+            <value>18 Year Olds</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>18</from>
+                <to>25</to>
+            </sourceValues>
+            <value>Adults (19-25)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>25</from>
+                <to>54</to>
+            </sourceValues>
+            <value>Adults (26-54)</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>54</from>
+            </sourceValues>
+            <value>Older Adults (55+)</value>
+        </values>
+    </buckets>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_59584713</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>Referral__c$Age_at_Referral__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Referral__c$EIS_Location__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Referral__c$Referral_Origin__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dashboard - Age at Referral (M5)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>STADD_Referrals__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Referral__c$Individual_Date_of_Birth__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

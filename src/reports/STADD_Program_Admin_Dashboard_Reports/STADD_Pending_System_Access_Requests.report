@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>System_Access_Request__c$Name</field>
+    </columns>
+    <columns>
+        <field>System_Access_Request__c$First_Name__c</field>
+    </columns>
+    <columns>
+        <field>System_Access_Request__c$Last_Name__c</field>
+    </columns>
+    <columns>
+        <field>System_Access_Request__c$User_Credentials_OR_Role_Profession__c</field>
+    </columns>
+    <columns>
+        <field>System_Access_Request__c$Relationship_to_Individual_if_Other__c</field>
+    </columns>
+    <description>Report of Pending System Access Requests for the Program Admin and Executive Dashboards</description>
+    <filter>
+        <criteriaItems>
+            <column>System_Access_Request__c$Status__c</column>
+            <operator>equals</operator>
+            <value>Pending,Approved</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>System_Access_Request__c$Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>System_Access_Request__c$CreatedDate</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>System_Access_Request__c$EIS_Region__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>STADD Pending System Access Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>STADD_System_Access_Request__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>System_Access_Request__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_LAST60</interval>
+    </timeFrameFilter>
+</Report>
