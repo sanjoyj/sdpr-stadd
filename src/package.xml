@@ -6,12 +6,9 @@
         <members>BME_Dashboards_Consolidated/Build_Management</members>
         <members>BME_Dashboards_Consolidated/Change_Requests</members>
         <members>BME_Dashboards_Consolidated/Project_Management</members>
-        <members>BME_Dashboards_Consolidated/Sprint3UAT</members>
         <members>CompanyDashboards</members>
         <members>CompanyDashboards/AdoptionDashboard</members>
         <members>CompanyDashboards/CompanyPerformanceDashboard</members>
-        <members>Dashboards_backup</members>
-        <members>Dashboards_backup/STADD_Director_Dashboard_v2</members>
         <members>STADD_Coordinator_Dashboards</members>
         <members>STADD_Coordinator_Dashboards/Coordinator_Case_Dashboard</members>
         <members>STADD_Coordinator_Dashboards/Coordinator_Referrals_Dashboard</members>
@@ -22,8 +19,6 @@
         <members>STADD_Navigator_Dashboards/STADD_Navigator_Dashboard</members>
         <members>STADD_Program_Admin_Dashboards</members>
         <members>STADD_Program_Admin_Dashboards/STADD_Program_Admin_Dashboard</members>
-        <members>STADD_System_Admin_Dashboard</members>
-        <members>STADD_System_Admin_Dashboard/STADD_System_Admin_Dashboard</members>
         <name>Dashboard</name>
     </types>
     <types>
@@ -183,49 +178,6 @@
         <members>X19th_Birthday_Notice_Director/X19th_Birthday_Notice_45days_Dir</members>
         <members>X19th_Birthday_Notice_Director/X19th_Birthday_Notice_60_days_Dir</members>
         <members>X19th_Birthday_Notice_Director/X19th_Birthday_Notice_90_days_Dir</members>
-        <members>unfiled$public</members>
-        <members>unfiled$public/All_defects</members>
-        <members>unfiled$public/All_fixed_in_config_last_release</members>
-        <members>unfiled$public/All_open_defects</members>
-        <members>unfiled$public/Coll_Partners_region</members>
-        <members>unfiled$public/Open_defects</members>
-        <members>unfiled$public/Open_enhancements</members>
-        <members>unfiled$public/STADD_Complaint_Action_Items</members>
-        <members>unfiled$public/STADD_Executive_Alerts</members>
-        <members>unfiled$public/STADD_Executive_Cases</members>
-        <members>unfiled$public/STADD_Executive_Referrals</members>
-        <members>unfiled$public/SampleReportActiveUsers</members>
-        <members>unfiled$public/SampleReportCasesStatusbyRep</members>
-        <members>unfiled$public/SampleReportClosedSales</members>
-        <members>unfiled$public/SampleReportCompletedActivities</members>
-        <members>unfiled$public/SampleReportCustomReportsbyUser</members>
-        <members>unfiled$public/SampleReportDocumentLibrary</members>
-        <members>unfiled$public/SampleReportLastModifiedBy</members>
-        <members>unfiled$public/SampleReportLeadsbyLeadSource</members>
-        <members>unfiled$public/SampleReportLoginLeaderboard</members>
-        <members>unfiled$public/SampleReportLoginWallofShame</members>
-        <members>unfiled$public/SampleReportMonthtoDateTrending</members>
-        <members>unfiled$public/SampleReportOpenCasesByPriority</members>
-        <members>unfiled$public/SampleReportOpenDeals</members>
-        <members>unfiled$public/SampleReportPipelineByCloseMonth</members>
-        <members>unfiled$public/SampleReportPipelineHistory</members>
-        <members>unfiled$public/SampleReportSalesLeaderboard</members>
-        <members>unfiled$public/SampleReportSalesPipelinebyStage</members>
-        <members>unfiled$public/SampleReportSolutionsAdded</members>
-        <members>unfiled$public/SampleReportTopAccounts</members>
-        <members>unfiled$public/SampleReportUsersLoggedIn</members>
-        <members>unfiled$public/SampleReportofAccounts</members>
-        <members>unfiled$public/SampleReportofCases</members>
-        <members>unfiled$public/SampleReportofContacts</members>
-        <members>unfiled$public/SampleReportofDocuments</members>
-        <members>unfiled$public/SampleReportofLeads</members>
-        <members>unfiled$public/SampleReportofOpenTasks</members>
-        <members>unfiled$public/SampleReportofOpportunities</members>
-        <members>unfiled$public/SampleReportofReports</members>
-        <members>unfiled$public/SampleReportofSolutions</members>
-        <members>unfiled$public/SampleReportofTasksandActivities</members>
-        <members>unfiled$public/SampleReportsLeadsbyStatus</members>
-        <members>unfiled$public/Wendy</members>
         <name>Report</name>
     </types>
     <types>
