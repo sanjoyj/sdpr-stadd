@@ -1,4 +1,0 @@
-<apex:page showHeader="true" tabstyle="Action_Item__c">
-<apex:sectionheader title="Action Items" subtitle="Home"></apex:sectionheader>
-    <apex:ListViews type="Action_Item__c" />
-</apex:page>

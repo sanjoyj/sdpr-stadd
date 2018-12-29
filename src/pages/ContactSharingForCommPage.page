@@ -1,7 +1,0 @@
-<apex:page Standardcontroller="Contact" extensions="ContactSharingForComm" tabStyle="Contact" id="thepage">
-
-	<apex:pageMessages />
-	<apex:detail subject="{!id}" rendered="{!rend}"/>
-	
-
-</apex:page>

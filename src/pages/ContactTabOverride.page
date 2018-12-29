@@ -1,4 +1,0 @@
-<apex:page showHeader="true" tabstyle="Contact">
-<apex:sectionheader title="Contacts" subtitle="Home"></apex:sectionheader>
-    <apex:ListViews type="Contact" />
-</apex:page>
