@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case Contacts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Case Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Full Name --></label>
+        <name>Contact_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell Phone --></label>
+        <name>Contact_Person_Cell_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Contact_Person_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>Contact_Person_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Phone number extension if required --></help>
+        <label><!-- Home Phone Extension --></label>
+        <name>Contact_Person_Home_Phone_Extension__c</name>
+    </fields>
+    <fields>
+        <help><!-- You need to enter at least one phone number --></help>
+        <label><!-- Home Phone --></label>
+        <name>Contact_Person_Home_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Contact_Person_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profession / Role --></label>
+        <name>Contact_Person_Profession_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Work Phone extension (if required) --></help>
+        <label><!-- Work Phone Extension --></label>
+        <name>Contact_Person_Work_Phone_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Phone --></label>
+        <name>Contact_Person_Work_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose only if Contact Type is &quot;Organizational&quot; --></help>
+        <label><!-- Contact Subtype --></label>
+        <name>Contact_Subtype__c</name>
+        <picklistValues>
+            <masterLabel>CFD</masterLabel>
+            <translation><!-- CFD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLBC</masterLabel>
+            <translation><!-- CLBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Authority</masterLabel>
+            <translation><!-- Health Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School</masterLabel>
+            <translation><!-- School --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Alternative</masterLabel>
+            <translation><!-- Alternative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organizational</masterLabel>
+            <translation><!-- Organizational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Case Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact note --></label>
+        <name>Contact_note__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date of when the contact became inactive --></help>
+        <label><!-- Inactive Date --></label>
+        <name>Inactive_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked if a contact is inactive --></help>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address City --></label>
+        <name>Mailing_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Line1 --></label>
+        <name>Mailing_Address_Line1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Line2 --></label>
+        <name>Mailing_Address_Line2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Postal Code --></label>
+        <name>Mailing_Address_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Address Province --></label>
+        <name>Mailing_Address_Province__c</name>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regional Office --></label>
+        <name>Organization_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only required if Relationship above = “Other ” --></help>
+        <label><!-- Relationship to Individual (if other) --></label>
+        <name>Other_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Invite Date --></label>
+        <name>Portal_Invite_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field if you want an email to be sent to the case contact with instruction to register to the application (i.e. if they are not portal users already). --></help>
+        <label><!-- Portal Invite --></label>
+        <name>Portal_Invite__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrimaryContact --></label>
+        <name>PrimaryContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Professional Identifying Number --></label>
+        <name>Professional_Identifying_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral --></label>
+        <name>Referral__c</name>
+        <relationshipLabel><!-- Case Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship to Individual --></label>
+        <name>Relationship_Subtype__c</name>
+        <picklistValues>
+            <masterLabel>CFD (Children and Family Development)</masterLabel>
+            <translation><!-- CFD (Children and Family Development) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLBC (Community Living BC) Worker</masterLabel>
+            <translation><!-- CLBC (Community Living BC) Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Committee</masterLabel>
+            <translation><!-- Committee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DAA (Delegated Aboriginal Agency)</masterLabel>
+            <translation><!-- DAA (Delegated Aboriginal Agency) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foster Parent</masterLabel>
+            <translation><!-- Foster Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friend</masterLabel>
+            <translation><!-- Friend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Home</masterLabel>
+            <translation><!-- Group Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardian</masterLabel>
+            <translation><!-- Guardian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse</masterLabel>
+            <translation><!-- Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician</masterLabel>
+            <translation><!-- Physician --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representative</masterLabel>
+            <translation><!-- Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Teacher</masterLabel>
+            <translation><!-- Resource Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Advocate</masterLabel>
+            <translation><!-- Self-Advocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Worker</masterLabel>
+            <translation><!-- Social Worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teacher</masterLabel>
+            <translation><!-- Teacher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Therapist</masterLabel>
+            <translation><!-- Therapist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee</masterLabel>
+            <translation><!-- Trustee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Support Team Member --></label>
+        <name>Support_Team_Member__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Checkbox can only be checked if Email Address exists already --></errorMessage>
+        <name>Check_only_when_email_present</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid phone number --></errorMessage>
+        <name>Phone_number_formatting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify the Other Relationship --></errorMessage>
+        <name>Relationship_Type_Other</name>
+    </validationRules>
+</CustomObjectTranslation>

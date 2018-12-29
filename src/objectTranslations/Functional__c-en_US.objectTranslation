@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Functional Domain Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Functional Domain Summaries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Profession of Assessor --></label>
+        <name>Assesor_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Date --></label>
+        <name>Assessment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessor First Name --></label>
+        <name>Assessor_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessor Last Name --></label>
+        <name>Assessor_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessor Name --></label>
+        <name>Assessor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessor Name --></label>
+        <name>Assessor_Name_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Name --></label>
+        <name>Case_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- CAP - Functional Domain Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cross-Reference Domain(s) --></label>
+        <name>Cross_Reference_Domain_s__c</name>
+        <picklistValues>
+            <masterLabel>Behavioral and Emotional Health</masterLabel>
+            <translation><!-- Behavioral and Emotional Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comm Participation Skills &amp; Social Incl</masterLabel>
+            <translation><!-- Comm Participation Skills &amp; Social Incl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Space Only</masterLabel>
+            <translation><!-- Family Space Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Status</masterLabel>
+            <translation><!-- Health Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language and Communication</masterLabel>
+            <translation><!-- Language and Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning Styles and Education</masterLabel>
+            <translation><!-- Learning Styles and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health: Diagnostic Info</masterLabel>
+            <translation><!-- Mental Health: Diagnostic Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Living Skills</masterLabel>
+            <translation><!-- Personal Living Skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Functioning</masterLabel>
+            <translation><!-- Physical Functioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reason and Decision-Making</masterLabel>
+            <translation><!-- Reason and Decision-Making --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Interaction &amp; Self-Determination</masterLabel>
+            <translation><!-- Social Interaction &amp; Self-Determination --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Domain Type --></label>
+        <name>Functional_Domain_Type_For_Print__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Behavioral and Emotional Health</masterLabel>
+            <translation><!-- Behavioral and Emotional Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Participation Skills and Social Inclusion</masterLabel>
+            <translation><!-- Community Participation Skills and Social Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Space Only</masterLabel>
+            <translation><!-- Family Space Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Status</masterLabel>
+            <translation><!-- Health Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language and Communication</masterLabel>
+            <translation><!-- Language and Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning Styles and Education</masterLabel>
+            <translation><!-- Learning Styles and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health: Diagnostic Information</masterLabel>
+            <translation><!-- Mental Health: Diagnostic Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Living Skills</masterLabel>
+            <translation><!-- Personal Living Skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Functioning</masterLabel>
+            <translation><!-- Physical Functioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reason and Decision-Making</masterLabel>
+            <translation><!-- Reason and Decision-Making --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Interaction and Self-Determination</masterLabel>
+            <translation><!-- Social Interaction and Self-Determination --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Functional Domain Type --></label>
+        <name>Functional_Domain_Type__c</name>
+        <picklistValues>
+            <masterLabel>Behavioral and Emotional Health</masterLabel>
+            <translation><!-- Behavioral and Emotional Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Participation Skills and Social Inclusion</masterLabel>
+            <translation><!-- Community Participation Skills and Social Inclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Space Only</masterLabel>
+            <translation><!-- Family Space Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Status</masterLabel>
+            <translation><!-- Health Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language and Communication</masterLabel>
+            <translation><!-- Language and Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Learning Styles and Education</masterLabel>
+            <translation><!-- Learning Styles and Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health: Diagnostic Information</masterLabel>
+            <translation><!-- Mental Health: Diagnostic Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Living Skills</masterLabel>
+            <translation><!-- Personal Living Skills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Functioning</masterLabel>
+            <translation><!-- Physical Functioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reason and Decision-Making</masterLabel>
+            <translation><!-- Reason and Decision-Making --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Interaction and Self-Determination</masterLabel>
+            <translation><!-- Social Interaction and Self-Determination --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Individual Name --></label>
+        <name>Individual_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last FD Update --></label>
+        <name>Last_FD_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Update --></label>
+        <name>Last_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Functional Domain --></label>
+        <name>Other_Functional_Domain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Domain Summary Text --></label>
+        <name>Summary__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a value for other Functional Domain --></errorMessage>
+        <name>Functional_domain_other</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Functional_Domain_Wizard --></label>
+        <name>Create_Functional_Domain_Wizard</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Functional_Domain_Summary_Help --></label>
+        <name>Functional_Domain_Summary_Help</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Functional_Domain_Summary --></label>
+        <name>Print_Functional_Domain_Summary</name>
+    </webLinks>
+</CustomObjectTranslation>

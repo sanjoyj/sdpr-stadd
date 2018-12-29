@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Action Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Action Items</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Item Type --></label>
+        <name>Action_Item_Type__c</name>
+        <picklistValues>
+            <masterLabel>Alert</masterLabel>
+            <translation><!-- Alert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Protocol</masterLabel>
+            <translation><!-- Protocol --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Action Item Name --></label>
+        <name>Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign To Me --></label>
+        <name>Assign_To_Me__c</name>
+    </fields>
+    <fields>
+        <help><!-- Action items can be assigned to users of Collaborate only.  If you need to assign an action item to a person who does not access Collaborate, please assign to yourself and describe who will complete the item in the description. --></help>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Action Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bring Forward Date --></label>
+        <name>Bring_Forward_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bring Forward --></label>
+        <name>Bring_Forward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case ID --></label>
+        <name>Case_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Name --></label>
+        <name>Case_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Action Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Individual Name --></label>
+        <name>Individual_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Milestone --></label>
+        <name>Milestone__c</name>
+        <relationshipLabel><!-- Action Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- MyActionItems --></label>
+        <name>MyActionItems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Goal --></label>
+        <name>Plan_Goal__c</name>
+        <relationshipLabel><!-- Action Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plan Type --></label>
+        <name>Plan_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>Plan__c</name>
+        <relationshipLabel><!-- Action Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Review Date --></label>
+        <name>Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dependency</masterLabel>
+            <translation><!-- Dependency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Required</masterLabel>
+            <translation><!-- No Longer Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner Change</masterLabel>
+            <translation><!-- Owner Change --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Closed --></label>
+        <name>Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter the Bring Forward Date --></errorMessage>
+        <name>Bring_Forward_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the record creator or a System Administrator can edit assigned action items. --></errorMessage>
+        <name>Only_Owner_and_Internal_can_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit Action Items that you did not create, or are not assigned to you --></errorMessage>
+        <name>User_Edit_Permissions</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Action_Items_Help --></label>
+        <name>Action_Items_Help</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plan Goals</value>
+    </caseValues>
+    <fields>
+        <help><!-- The developmental area as described in the functional domain summaries --></help>
+        <label><!-- Area of Importance --></label>
+        <name>Area_of_Importance__c</name>
+        <picklistValues>
+            <masterLabel>Emotional Well-Being</masterLabel>
+            <translation><!-- Emotional Well-Being --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inter-Personal Relations</masterLabel>
+            <translation><!-- Inter-Personal Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Material Well-Being</masterLabel>
+            <translation><!-- Material Well-Being --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Development</masterLabel>
+            <translation><!-- Personal Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Well-Being</masterLabel>
+            <translation><!-- Physical Well-Being --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rights</masterLabel>
+            <translation><!-- Rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Determination</masterLabel>
+            <translation><!-- Self-Determination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Inclusion</masterLabel>
+            <translation><!-- Social Inclusion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case ID --></label>
+        <name>Case_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If goal type is &quot;Other&quot;, please enter an unique description in &quot;Goal Name&quot;. --></help>
+        <label><!-- Goal Type --></label>
+        <name>Goal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Community Connections</masterLabel>
+            <translation><!-- Community Connections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision-making Agreements</masterLabel>
+            <translation><!-- Decision-making Agreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment</masterLabel>
+            <translation><!-- Employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Security</masterLabel>
+            <translation><!-- Financial Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health &amp; Wellness</masterLabel>
+            <translation><!-- Health &amp; Wellness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positive Relationships</masterLabel>
+            <translation><!-- Positive Relationships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety in My Home &amp; Community</masterLabel>
+            <translation><!-- Safety in My Home &amp; Community --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Goal --></label>
+        <name>Goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- List the most important steps that the individual, family, support network and support team must do for the individual to achieve this goal. --></help>
+        <label><!-- Important steps to reach this goal --></label>
+        <name>Important_steps_to_reach_this_goal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Why this goal is important to the individual and how the goal will improve the individual&apos;s quality of life. --></help>
+        <label><!-- Important to me because --></label>
+        <name>Important_to_me_because__c</name>
+    </fields>
+    <fields>
+        <help><!-- Plan --></help>
+        <label><!-- Plan --></label>
+        <name>Plan__c</name>
+        <relationshipLabel><!-- Plan Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Planning</masterLabel>
+            <translation><!-- Future Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Required</masterLabel>
+            <translation><!-- No Longer Required --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Closed --></label>
+        <name>Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only the record creator or a System Administrator can edit this record. --></errorMessage>
+        <name>Only_Owner_and_Internal_can_Edit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New --></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Plan_Goal_Help --></label>
+        <name>Plan_Goal_Help</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email_to_CaseTeam --></label>
+        <name>Send_Email_to_CaseTeam</name>
+    </webLinks>
+</CustomObjectTranslation>

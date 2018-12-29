@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assisted Individual --></label>
+        <name>Assisted_Individual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner --></label>
+        <name>Case_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Meeting Date --></label>
+        <name>First_Meeting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First meeting --></label>
+        <name>First_meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- ONLY 1 &quot;SUPPORT PLAN&quot; PER PERSON ALLOWED --></label>
+        <name>ONLY_ONE_PLAN_PER_PERSON_ALLOWED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Description --></label>
+        <name>Plan_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Status --></label>
+        <name>Plan_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft in Progress</masterLabel>
+            <translation><!-- Draft in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Place/ Signed-off</masterLabel>
+            <translation><!-- In Place/ Signed-off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Active</masterLabel>
+            <translation><!-- Not Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Current</masterLabel>
+            <translation><!-- Not Current --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plan Type --></label>
+        <name>Plan_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contingency Plan</masterLabel>
+            <translation><!-- Contingency Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crisis Plan</masterLabel>
+            <translation><!-- Crisis Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Plan</masterLabel>
+            <translation><!-- Support Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique Case Plan --></help>
+        <label><!-- Unique Case Plan --></label>
+        <name>Unique_Case_Plan__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Closed --></label>
+        <name>Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only the record creator or a System Administrator can edit this record. --></errorMessage>
+        <name>Only_Owner_and_Internal_can_Edit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Print_Plan --></label>
+        <name>Print_Plan</name>
+    </webLinks>
+</CustomObjectTranslation>

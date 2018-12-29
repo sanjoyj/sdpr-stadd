@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Test Case</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Test Cases</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Test Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select all Relevant User Profiles --></help>
+        <label><!-- Relevant User Profiles --></label>
+        <name>Relevant_User_Profiles__c</name>
+        <picklistValues>
+            <masterLabel>Authenticated Website</masterLabel>
+            <translation><!-- Authenticated Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BME Standard User</masterLabel>
+            <translation><!-- BME Standard User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BME Super User</masterLabel>
+            <translation><!-- BME Super User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chatter External User</masterLabel>
+            <translation><!-- Chatter External User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chatter Free User</masterLabel>
+            <translation><!-- Chatter Free User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chatter Moderator User</masterLabel>
+            <translation><!-- Chatter Moderator User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Manager</masterLabel>
+            <translation><!-- Contract Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Force.com - Free User</masterLabel>
+            <translation><!-- Force.com - Free User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold Partner User</masterLabel>
+            <translation><!-- Gold Partner User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Volume Customer Portal</masterLabel>
+            <translation><!-- High Volume Customer Portal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Profile</masterLabel>
+            <translation><!-- Marketing Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing User</masterLabel>
+            <translation><!-- Marketing User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner User</masterLabel>
+            <translation><!-- Partner User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Manager</masterLabel>
+            <translation><!-- Portal Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Manager Custom</masterLabel>
+            <translation><!-- Portal Manager Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Manager Standard</masterLabel>
+            <translation><!-- Portal Manager Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Read Only</masterLabel>
+            <translation><!-- Read Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Profile</masterLabel>
+            <translation><!-- Sales Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Cloud</masterLabel>
+            <translation><!-- Service Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver Partner User</masterLabel>
+            <translation><!-- Silver Partner User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution Manager</masterLabel>
+            <translation><!-- Solution Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Platform User</masterLabel>
+            <translation><!-- Standard Platform User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard User</masterLabel>
+            <translation><!-- Standard User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Profile</masterLabel>
+            <translation><!-- Support Profile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Administrator</masterLabel>
+            <translation><!-- System Administrator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requirement --></label>
+        <name>Requirement__c</name>
+        <relationshipLabel><!-- Test Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Unique identifier from the test scripts --></help>
+        <label><!-- STADD Test Case No --></label>
+        <name>STADD_Test_Case_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Ready to Test</masterLabel>
+            <translation><!-- Not Ready to Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passed</masterLabel>
+            <translation><!-- Passed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Case Name --></label>
+        <name>Test_Case_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Case No --></label>
+        <name>Test_Case_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Test Case Users in this field --></help>
+        <label><!-- Test Case Users --></label>
+        <name>Test_Case_Users__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select all relevant Test Cycles related to this Test Case --></help>
+        <label><!-- Test Cycle --></label>
+        <name>Test_Cycle__c</name>
+        <picklistValues>
+            <masterLabel>Test Cycle 1</masterLabel>
+            <translation><!-- Test Cycle 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Cycle 2</masterLabel>
+            <translation><!-- Test Cycle 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Cycle 3</masterLabel>
+            <translation><!-- Test Cycle 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Cycle 4</masterLabel>
+            <translation><!-- Test Cycle 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Cycle 5</masterLabel>
+            <translation><!-- Test Cycle 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Cycle 6</masterLabel>
+            <translation><!-- Test Cycle 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Cycle 7</masterLabel>
+            <translation><!-- Test Cycle 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Data Test</masterLabel>
+            <translation><!-- Data Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Test</masterLabel>
+            <translation><!-- Integration Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Test</masterLabel>
+            <translation><!-- System Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Test</masterLabel>
+            <translation><!-- Unit Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Use Case --></label>
+        <name>Use_Case__c</name>
+        <relationshipLabel><!-- Related Test Cases --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_Test_Step_Results --></label>
+        <name>Add_Test_Step_Results</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Update_Step_s --></label>
+        <name>Add_Update_Step_s</name>
+    </webLinks>
+</CustomObjectTranslation>

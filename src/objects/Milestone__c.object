@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>Help_Milestone_VF</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>BME - Milestones will be used to track the Key Events during the lifecycle of a Project/Release. This object is an important component for status reports and Milestones will be always related to a Release</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actual_Completion_Date__c</fullName>
+        <description>This field will be populated from a workflow when the status of the milestone is updated to &apos;Completed&apos;</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Actual Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Alerts__c</fullName>
+        <description>Alert related to milestone Target date</description>
+        <externalId>false</externalId>
+        <formula>IF(OR(AND(( TEXT(Status__c) &lt;&gt; &quot;Completed&quot; ), Target_Completion_Date__c &lt; TODAY())), IMAGE(&quot;img/msg_icons/error16.png&quot;,&quot;&quot;)&amp; &quot; Overdue&quot;&amp; BR(), &quot;&quot;) &amp;
+ IF(TEXT(Status__c) = &quot;At Risk&quot;, IMAGE(&quot;/img/msg_icons/warning16.png&quot;,&quot;&quot;) &amp; &quot; Status &apos;At Risk&apos;&quot; &amp; BR(),&quot;&quot;) &amp;
+ IF (AND((Target_Completion_Date__c - 7) &lt; TODAY(),Target_Completion_Date__c &gt; TODAY() ), IMAGE(&quot;/img/func_icons/util/datePicker16.gif&quot;,&quot;X&quot;) &amp; &quot; Due Soon&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alerts</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Detailed_Description__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the detailed description of this Milestone including the Purpose/Scope/Criticality/ Significance/Sign-off details</inlineHelpText>
+        <label>Detailed Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Predecessor_Milestone__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Milestone which must be completed before this one can be completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose a milestone that must be completed before this one can complete</inlineHelpText>
+        <label>Predecessor Milestone</label>
+        <referenceTo>Milestone__c</referenceTo>
+        <relationshipLabel>Successor Milestones</relationshipLabel>
+        <relationshipName>Milestones</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Release__c</fullName>
+        <description>All the milestones will be related to a Release hence the Master-Detail relationship between Release and Milestones</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Release to which this Milestone belongs</inlineHelpText>
+        <label>Release</label>
+        <referenceTo>Release__c</referenceTo>
+        <relationshipLabel>Milestones</relationshipLabel>
+        <relationshipName>Milestones</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the date when this Milestone should start</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the current status of this Milestone</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>On Schedule</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off Schedule</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deferred</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Target_Completion_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the date when this Milestone should be completed</inlineHelpText>
+        <label>Target Completion Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Work_Package__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Workpackage related to the milestone. This field need not be filled for a Program milestone</description>
+        <externalId>false</externalId>
+        <label>Work Package</label>
+        <referenceTo>Work_Package__c</referenceTo>
+        <relationshipLabel>Milestones</relationshipLabel>
+        <relationshipName>Milestones</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Milestone</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>false</encrypted>
+        <label>Milestone Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Milestones</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Release__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>BME_Prevent_Completed_Milestone_Edits</fullName>
+        <active>true</active>
+        <description>This validation rule is to prevent the users from editing the Milestone record once it is completed</description>
+        <errorConditionFormula>AND( 
+OR(ISCHANGED( Name ),ISCHANGED( Target_Completion_Date__c) ,ISCHANGED( Detailed_Description__c  )), ISPICKVAL( Status__c , &apos;Completed&apos;), ISPICKVAL( PRIORVALUE(Status__c) , &apos;Completed&apos;)
+)</errorConditionFormula>
+        <errorMessage>Name, Target Completion Date and Description cannot be changed when the Milestone is Completed</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Work Package</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Work Packages</value>
+    </caseValues>
+    <fields>
+        <label><!-- % Biz Process Design Completed --></label>
+        <name>Biz_Process_Design_Completed__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field rolls up the sum of Business Process Design hours for all reqts associated to this work package. --></help>
+        <label><!-- Biz Process Design Hours --></label>
+        <name>Biz_Process_Design_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biz Process Design Hrs Remaining --></label>
+        <name>Biz_Process_Design_Hrs_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Biz Process Design Resource --></label>
+        <name>Biz_Process_Design_Resource__c</name>
+        <relationshipLabel><!-- Work Packages (Biz Process Design Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- % Configuration Completed --></label>
+        <name>Configuration_Completed__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field rolls up the sum of Configuration hours from all requirements associated to this work package. --></help>
+        <label><!-- Configuration Hours --></label>
+        <name>Configuration_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Hrs Remaining --></label>
+        <name>Configuration_Hrs_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Resource --></label>
+        <name>Configuration_Resource__c</name>
+        <relationshipLabel><!-- Work Packages (Configuration Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Development Completed --></label>
+        <name>Development_Completed__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field rolls up the sum of Development hours from all requirements associated to this work package. --></help>
+        <label><!-- Development Hours --></label>
+        <name>Development_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Hrs Remaining --></label>
+        <name>Development_Hrs_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Resource --></label>
+        <name>Development_Resource__c</name>
+        <relationshipLabel><!-- Work Packages (Development Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Start Date --></label>
+        <name>Estimated_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Functional Review Date --></label>
+        <name>Expected_Functional_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Technical Review Date --></label>
+        <name>Expected_Technical_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected User Review Date --></label>
+        <name>Expected_User_Review_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Review Completed? --></label>
+        <name>Functional_Review_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Requirements Completed --></label>
+        <name>Info_Requirements_Completed__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Integration Description --></label>
+        <name>Integration_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Integrations --></label>
+        <name>Integrations__c</name>
+        <picklistValues>
+            <masterLabel>&lt;Setup needed&gt;</masterLabel>
+            <translation><!-- &lt;Setup needed&gt; --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Objects --></label>
+        <name>Key_Objects__c</name>
+        <picklistValues>
+            <masterLabel>Accounts</masterLabel>
+            <translation><!-- Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activities</masterLabel>
+            <translation><!-- Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation><!-- Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads</masterLabel>
+            <translation><!-- Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunities</masterLabel>
+            <translation><!-- Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quotes</masterLabel>
+            <translation><!-- Quotes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions</masterLabel>
+            <translation><!-- Solutions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Offshore Developer Resource --></label>
+        <name>Offshore_Developer_Resource__c</name>
+        <relationshipLabel><!-- Work Packages (Offshore Developer Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Short description of justification for current progress value. Update before each status report and overwrite old values. --></help>
+        <label><!-- Progress Statement --></label>
+        <name>Progress_Statement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Green - No issues preventing reaching target completion date.
+Yellow - Open items are putting completion date at risk.
+Red - PMO attention is required.  Work Package dates must be re-planned. --></help>
+        <label><!-- Progress --></label>
+        <name>Progress__c</name>
+        <picklistValues>
+            <masterLabel>Green - On Track</masterLabel>
+            <translation><!-- Green - On Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red - Off Track</masterLabel>
+            <translation><!-- Red - Off Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow - At Risk</masterLabel>
+            <translation><!-- Yellow - At Risk --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Objects --></label>
+        <name>Related_Objects__c</name>
+        <picklistValues>
+            <masterLabel>Accounts</masterLabel>
+            <translation><!-- Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Activities</masterLabel>
+            <translation><!-- Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campaigns</masterLabel>
+            <translation><!-- Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cases</masterLabel>
+            <translation><!-- Cases --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts</masterLabel>
+            <translation><!-- Contracts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leads</masterLabel>
+            <translation><!-- Leads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunities</masterLabel>
+            <translation><!-- Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quotes</masterLabel>
+            <translation><!-- Quotes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solutions</masterLabel>
+            <translation><!-- Solutions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Release --></label>
+        <name>Release__c</name>
+        <relationshipLabel><!-- Work Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field rolls up the sum of Requirements gathering hours from all requirements associated to this work package. --></help>
+        <label><!-- Requirements Hours --></label>
+        <name>Requirements_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirements Hrs Remaining --></label>
+        <name>Requirements_Hrs_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirements Resource --></label>
+        <name>Requirements_Resource__c</name>
+        <relationshipLabel><!-- Work Packages (Requirements Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In QA</masterLabel>
+            <translation><!-- In QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- % Tech Design Completed --></label>
+        <name>Tech_Design_Completed__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25%</masterLabel>
+            <translation><!-- 25% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75%</masterLabel>
+            <translation><!-- 75% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field rolls up the sum of Technical Design hours from all requirements associated to this work package. --></help>
+        <label><!-- Tech Design Hours --></label>
+        <name>Tech_Design_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tech Design Hrs Remaining --></label>
+        <name>Tech_Design_Hrs_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tech Design Resource --></label>
+        <name>Tech_Design_Resource__c</name>
+        <relationshipLabel><!-- Work Packages (Tech Design Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Technical Review Completed? --></label>
+        <name>Technical_Review_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Level of Effort --></label>
+        <name>Total_Level_of_Effort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Cases Completed? --></label>
+        <name>Use_Cases_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Design Review Complete? --></label>
+        <name>User_Design_Review_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wireframes Included? --></label>
+        <name>Wireframes_included__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Package Name --></label>
+        <name>Work_Package_Name__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

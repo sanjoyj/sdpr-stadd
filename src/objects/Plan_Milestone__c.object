@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>PlanMileStoneOverride</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>Help_Milestone_VF</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Case_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Plan_Goal__r.Plan__r.Case__r.Id</formula>
+        <label>Case ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Plan_Goal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Goal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Goal</inlineHelpText>
+        <label>Plan Goal</label>
+        <referenceTo>Plan_Goal__c</referenceTo>
+        <relationshipLabel>Plan Milestones</relationshipLabel>
+        <relationshipName>Plan_Milestones</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan</label>
+        <referenceTo>Plan__c</referenceTo>
+        <relationshipLabel>Plan Milestones</relationshipLabel>
+        <relationshipName>Plan_Milestones</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Future Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Longer Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <externalId>false</externalId>
+        <formula>Plan_Goal__r.Plan__r.Case__r.Subject</formula>
+        <label>Subject</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Plan Milestone</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <encrypted>true</encrypted>
+        <label>Milestone Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Plan Milestones</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Closed</fullName>
+        <active>true</active>
+        <label>Closed</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Longer Required</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Plan_Goal__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Plan__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Subject__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Plan_Goal__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Plan__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Subject__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Plan_Goal__c</searchFilterFields>
+        <searchFilterFields>Plan__c</searchFilterFields>
+        <searchResultsAdditionalFields>Plan_Goal__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Plan__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Only_Owner_and_Internal_can_Edit</fullName>
+        <active>true</active>
+        <description>**丄具슞七풑 妶斏麛좶랒웇쟄颡ꁚ 苻膃炌緄饩怞떦橴鰀 蔵筫踱峬姷됴僦껓쓑 脇麳ꉳ嶓鲭萆菙麴言 尺珸奖췼믵殁勝癃谀 戩滂嘏跐瘋鞁삘퓵圀 塊釚쑭騭燮詐櫃뷖룑 呣늆恊랼昃냠먉쑣쟑 枸씻槬劜워憡滔摑껑 洇隄刈妾牌撕듣ꍄ뿑 裩獊漬峈뽘疍羑惛鄀 蔵筫踱峬姷됴僦껓쓑.&amp;\\ ䷀仄䷀䷀䷈56308!</description>
+        <errorConditionFormula>AND 
+( 
+NOT(ISNEW()),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Director&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Navigator&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Coordinator&quot;,
+$Profile.Name &lt;&gt; &quot;STADD Project Administrator&quot;, 
+CreatedById &lt;&gt; $User.Id,
+Plan__r.Case__r.Owner:User.Id &lt;&gt; $User.Id     
+)</errorConditionFormula>
+        <errorMessage>Only the record creator or a System Administrator can edit this record.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Milestones_Help</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Milestones Help</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>window.open(&apos;/resource/1457651036000/Help_Milestone&apos;)</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Milestone</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Milestone</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/a0p/e?CF00Ni000000BeUar={!Plan_Goal__c.Name}&amp;CF00Ni000000BeUar_lkid={!Plan_Goal__c.Id}&amp;CF00Ni000000BeUdn={!Plan__c.Name}&amp;CF00Ni000000BeUdn_lkid={!Plan__c.Id}&amp;retURL=%2F{!Plan_Goal__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Milestone_portal</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Milestone</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/stadd/a0p/e?CF00Ni000000BeUar={!Plan_Goal__c.Name}&amp;CF00Ni000000BeUar_lkid={!Plan_Goal__c.Id}&amp;CF00Ni000000BeUdn={!Plan__c.Name}&amp;CF00Ni000000BeUdn_lkid={!Plan__c.Id}&amp;retURL=%2Fstadd%2F{!Plan_Goal__c.Id}%3Fbtdid%3D{!Plan__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Email_to_Case_Team</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Notify the Case Team</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT (&quot;/soap/ajax/36.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/36.0/apex.js&quot;)} 
+try
+{
+var CaseId = &apos;{!Plan_Milestone__c.Case_ID__c}&apos;; 
+var PlanMilestoneId=&apos;{!Plan_Milestone__c.Id}&apos;; 
+//alert(CaseId); 
+//alert(PlanMilestoneId); 
+sforce.apex.execute(&quot;SendEmailToCaseTeam&quot;,&quot;SendEmail&quot;,{caseId:CaseId,childId:PlanMilestoneId}); 
+alert(&quot;An email has been sent to the case team with the changes you have made in Plan Milestone.&quot;); 
+document.location.reload(true); 
+}
+catch(e) { alert(&quot;Your email to the case team could not be sent. Please create the case team or contact system administrator.&quot;);  }</url>
+    </webLinks>
+</CustomObject>
