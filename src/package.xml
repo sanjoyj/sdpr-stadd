@@ -10,14 +10,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>Flow</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>FlowDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>HomePageComponent</name>
     </types>
     <types>
@@ -35,10 +27,6 @@
     <types>
         <members>*</members>
         <name>Role</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>SamlSsoConfig</name>
     </types>
 	    <types>
         <members>BME_Templates</members>
@@ -170,109 +158,6 @@
     <types>
         <members>*</members>
         <name>StaticResource</name>
-    </types>
-    <types>
-        <members>Aboriginal_Band__c</members>
-        <members>Account</members>
-        <members>Action_Item__c</members>
-        <members>Assessment_List__c</members>
-        <members>Asset</members>
-        <members>AssetRelationship</members>
-        <members>AssistantProgress</members>
-        <members>Budget_Status_Mapping__c</members>
-        <members>CR_Components_Join__c</members>
-        <members>Campaign</members>
-        <members>CampaignMember</members>
-        <members>Case</members>
-        <members>CaseComment</members>
-        <members>Case_Access_Request__c</members>
-        <members>Case_Alert__c</members>
-        <members>Case_Contact__c</members>
-        <members>Case_Document__c</members>
-        <members>Case_Note__c</members>
-        <members>Change_Request__c</members>
-        <members>ChannelProgram</members>
-        <members>ChannelProgramLevel</members>
-        <members>ChannelProgramMember</members>
-        <members>ChatterActivity</members>
-        <members>Component__c</members>
-        <members>Contact</members>
-        <members>Contract</members>
-        <members>Contribution__c</members>
-        <members>Defect_Requirement_Join__c</members>
-        <members>Defect__c</members>
-        <members>Deliverables__c</members>
-        <members>DuplicateRecordItem</members>
-        <members>DuplicateRecordSet</members>
-        <members>EmailMessage</members>
-        <members>Event</members>
-        <members>ExchangeUserMapping</members>
-        <members>FeedItem</members>
-        <members>File_Download_Audit__c</members>
-        <members>Funcdomsettings__c</members>
-        <members>Functional_Domain_Update__c</members>
-        <members>Functional__c</members>
-        <members>Idea</members>
-        <members>Lead</members>
-        <members>Login_Page_Messages__c</members>
-        <members>Macro</members>
-        <members>MacroAction</members>
-        <members>MacroInstruction</members>
-        <members>Mapping_object__c</members>
-        <members>Milestone_Status_Mapping__c</members>
-        <members>Milestone__c</members>
-        <members>NetworkMember</members>
-        <members>Opportunity</members>
-        <members>OpportunityLineItem</members>
-        <members>Organization</members>
-        <members>PartnerFundAllocation</members>
-        <members>PartnerFundClaim</members>
-        <members>PartnerFundRequest</members>
-        <members>PartnerMarketingBudget</members>
-        <members>Plan_Goal__c</members>
-        <members>Plan_Milestone__c</members>
-        <members>Plan__c</members>
-        <members>Portal_User_Counter__c</members>
-        <members>Portal_User_Org__c</members>
-        <members>Postal_Code__c</members>
-        <members>Product2</members>
-        <members>Project_Item__c</members>
-        <members>Project_Status_Mapping__c</members>
-        <members>Project__c</members>
-        <members>Protocols_and_Safeguards__c</members>
-        <members>QuickText</members>
-        <members>Referral__c</members>
-        <members>Release__c</members>
-        <members>RequestsForAccessSIQ</members>
-        <members>Requirement__c</members>
-        <members>Resource_Scope_Status_Mapping__c</members>
-        <members>SAML_Exception__c</members>
-        <members>SSO_Redirect_Config__c</members>
-        <members>STADDLink__c</members>
-        <members>Site</members>
-        <members>SocialPersona</members>
-        <members>SocialPost</members>
-        <members>Solution</members>
-        <members>Status_Reports__c</members>
-        <members>StreamActivityAccess</members>
-        <members>StreamingChannel</members>
-        <members>Supplies_and_Equipment__c</members>
-        <members>Support_and_Service__c</members>
-        <members>System_Access_Request__c</members>
-        <members>Task</members>
-        <members>Test_Case_Result__c</members>
-        <members>Test_Case_Step__c</members>
-        <members>Test_Case__c</members>
-        <members>Topic</members>
-        <members>TopicAssignment</members>
-        <members>Use_Case_Step__c</members>
-        <members>Use_Case__c</members>
-        <members>User</members>
-        <members>UserLicense</members>
-        <members>UserProvisioningRequest</members>
-        <members>Work_Package__c</members>
-        <members>Work_Plan__c</members>
-        <name>Workflow</name>
     </types>
     <types>
         <members>*</members>
