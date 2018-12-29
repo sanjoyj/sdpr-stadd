@@ -123,7 +123,19 @@
         <name>CustomObjectTranslation</name>
     </types>
     <types>
-        <members>*</members>
+		<members>STADD Coordinator</members>
+		<members>STADD Data Integration</members>
+		<members>STADD Director</members>
+		<members>STADD Executive</members>
+		<members>STADD IFSN (login)</members>
+		<members>STADD Project Administrator</members>
+		<members>STADD support team (login)</members>
+		<members>STADD support team - referring (login)</members>
+		<members>stadd Profile</members>
+		<members>STADD Profile1384465895917</members>
+		<members>STADD support team - referring (member)</members>
+		<members>STADD support team (member)</members>
+		<members>System Administrator</members>
         <name>Profile</name>
     </types>
     <version>36.0</version>
