@@ -28,52 +28,6 @@
         <members>*</members>
         <name>Role</name>
     </types>
-	    <types>
-        <members>BME_Templates</members>
-        <members>BME_Templates/Change_Request_Approved</members>
-        <members>BME_Templates/Change_Request_Assigned_to_you_for_Approval</members>
-        <members>BME_Templates/Change_Request_Rejected</members>
-        <members>BME_Templates/Deliverable_Approved</members>
-        <members>BME_Templates/Deliverable_Assigned_to_you_for_Approval</members>
-        <members>BME_Templates/Deliverable_Rejected</members>
-        <members>BME_Templates/Open_Item_Escalation_Notice</members>
-        <members>BME_Templates/Please_Complete_Functional_Review</members>
-        <members>BME_Templates/Please_Complete_Technical_Review</members>
-        <members>BME_Templates/Please_Complete_User_Review</members>
-        <members>BME_Templates/Project_Item_Escalated</members>
-        <members>unfiled$public</members>
-        <members>unfiled$public/Activity_due_by_today</members>
-        <members>unfiled$public/Case_Ownership_Transfer</members>
-        <members>unfiled$public/Case_converted_notification</members>
-        <members>unfiled$public/CommunityChangePasswordEmailTemplate</members>
-        <members>unfiled$public/CommunityForgotPasswordEmailTemplate</members>
-        <members>unfiled$public/CommunityLockoutEmailTemplate</members>
-        <members>unfiled$public/CommunityVerificationEmailTemplate</members>
-        <members>unfiled$public/CommunityWelcomeEmailTemplate</members>
-        <members>unfiled$public/ContactFollowUpSAMPLE</members>
-        <members>unfiled$public/Email_to_Potential_Portal_user</members>
-        <members>unfiled$public/Email_to_Potential_Portal_user_HTML</members>
-        <members>unfiled$public/LeadsNewassignmentnotificationSAMPLE</members>
-        <members>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</members>
-        <members>unfiled$public/New_Case_Access_Request_Granted</members>
-        <members>unfiled$public/New_Case_alert_notification_to_Navigator</members>
-        <members>unfiled$public/Referral_rejected_notification</members>
-        <members>unfiled$public/Referral_rejected_notification_V2</members>
-        <members>unfiled$public/Restricted_Alert_Notification</members>
-        <members>unfiled$public/SUPPORT%3A Self-Service New Comment %28SAMPLE%29</members>
-        <members>unfiled$public/SUPPORT%3A Self-Service New User Login %28SAMPLE%29</members>
-        <members>unfiled$public/SUPPORT%3A Self-Service Reset Password %28SAMPLE%29</members>
-        <members>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</members>
-        <members>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</members>
-        <members>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</members>
-        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
-        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
-        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
-        <members>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</members>
-        <members>unfiled$public/System_Access_Request_Approved</members>
-        <members>unfiled$public/Transfer_Queue</members>
-        <name>EmailTemplate</name>
-    </types>
     <types>
         <members>Aboriginal_Band__c</members>
         <members>Account</members>
