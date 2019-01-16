@@ -1,5 +1,0 @@
-Referral Number {!Referral__c.Name}
-
-On {!Referral__c.CreatedDate}, you submitted a referral to STADD.  This referral has been accepted and is assigned to STADD Navigator : {!Referral__c.OwnerFullName} , Phone : {!Referral__c.OwnerPhone}.  
-
-Remember, you can review the status of your referrals at any time by logging into Collaborate and clicking the referrals tab. Click here to access Collaborate Login Page : https://developmental-disability-support.gov.bc.ca
