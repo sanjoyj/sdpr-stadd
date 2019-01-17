@@ -1,7 +1,0 @@
-<apex:page standardController="Referral__c">
-<script>
-window.location.href = '/a0s/o';
-<!-- window.open('/apex/CreateReferralPage1', '_newtab'); -->
-window.open('/apex/CreateReferralPage1', '_blank');
-</script>
-</apex:page>

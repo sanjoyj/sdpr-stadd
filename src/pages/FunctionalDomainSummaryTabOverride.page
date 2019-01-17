@@ -1,4 +1,0 @@
-<apex:page showHeader="true" tabstyle="Functional__c">
-<apex:sectionheader title="Functional Domain Summary" subtitle="Home"></apex:sectionheader>
-    <apex:ListViews type="Functional__c" />
-</apex:page>

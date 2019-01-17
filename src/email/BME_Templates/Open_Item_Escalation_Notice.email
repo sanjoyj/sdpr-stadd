@@ -1,3 +1,0 @@
-{!Project_Item__c.OwnerFullName} has identified {!Project_Item__c.Name} as an open item that is in need of resolution and has escalated the issue to you. This issue may be something that, if not addressed, can impact project timeline and goals. Please look into this open item and contact {!Project_Item__c.OwnerFullName} at {!Project_Item__c.OwnerEmail} if you have any questions.
-
-You can access the full record at: https://na7.salesforce.com/{!Project_Item__c.Id}

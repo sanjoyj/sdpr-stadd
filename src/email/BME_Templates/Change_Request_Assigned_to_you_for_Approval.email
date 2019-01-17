@@ -1,3 +1,0 @@
-The change request {!Change_Request__c.Name} has been assigned to you for approval. Please review the request at {!Change_Request__c.Link}.
-
-If you have any questions, please contact the change request owner, {!Change_Request__c.OwnerFullName} at {!Change_Request__c.OwnerEmail}.

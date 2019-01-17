@@ -1,6 +1,0 @@
-<apex:page standardController="Case_Contact__c" showHeader="false" sidebar="false" >
-        <span style="background-color:#5183EE ;color:white; font-weight: bold; font-size: 17pt; display: block; text-align:center">
-            <apex:outputText rendered="{!Case_Contact__c.Case__c==null}">{!Case_Contact__c.Referral__r.Individual_Name_formula__c}</apex:outputText>
-   			<apex:outputText rendered="{!Case_Contact__c.Case__c!=null}">{!Case_Contact__c.Case__r.contact.Name}</apex:outputText>
-        </span>
-</apex:page>
